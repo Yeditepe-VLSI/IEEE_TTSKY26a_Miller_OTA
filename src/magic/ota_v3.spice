@@ -1,0 +1,63 @@
+* NGSPICE file created from ota_v3.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_PJC3NT D0 G0 S1 VSUBS
+X0 a_429_n96# S1 S1 VSUBS sky130_fd_pr__nfet_01v8 ad=0.1885 pd=1.88 as=0.09425 ps=0.94 w=0.65 l=2
+X1 S1 G0 D0 VSUBS sky130_fd_pr__nfet_01v8 ad=0.09425 pd=0.94 as=0.1885 ps=1.88 w=0.65 l=2
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_LPGTGV G D0_0 D0_1 S1_0 S1_1 D2_0 D2_1 S3_0 S3_1 D4_0
++ D4_1 S5_0 S5_1 a_1345_n185# a_1345_55# VSUBS
+X0 a_1345_55# G S5_1 VSUBS sky130_fd_pr__nfet_01v8 ad=0.1885 pd=1.88 as=0.09425 ps=0.94 w=0.65 l=2
+X1 D4_1 G S3_1 VSUBS sky130_fd_pr__nfet_01v8 ad=0.09425 pd=0.94 as=0.09425 ps=0.94 w=0.65 l=2
+X2 D4_0 G S3_0 VSUBS sky130_fd_pr__nfet_01v8 ad=0.09425 pd=0.94 as=0.09425 ps=0.94 w=0.65 l=2
+X3 S5_0 G D4_0 VSUBS sky130_fd_pr__nfet_01v8 ad=0.09425 pd=0.94 as=0.09425 ps=0.94 w=0.65 l=2
+X4 S3_1 G D2_1 VSUBS sky130_fd_pr__nfet_01v8 ad=0.09425 pd=0.94 as=0.09425 ps=0.94 w=0.65 l=2
+X5 D2_0 G S1_0 VSUBS sky130_fd_pr__nfet_01v8 ad=0.09425 pd=0.94 as=0.09425 ps=0.94 w=0.65 l=2
+X6 D2_1 G S1_1 VSUBS sky130_fd_pr__nfet_01v8 ad=0.09425 pd=0.94 as=0.09425 ps=0.94 w=0.65 l=2
+X7 S3_0 G D2_0 VSUBS sky130_fd_pr__nfet_01v8 ad=0.09425 pd=0.94 as=0.09425 ps=0.94 w=0.65 l=2
+X8 a_1345_n185# G S5_0 VSUBS sky130_fd_pr__nfet_01v8 ad=0.1885 pd=1.88 as=0.09425 ps=0.94 w=0.65 l=2
+X9 S5_1 G D4_1 VSUBS sky130_fd_pr__nfet_01v8 ad=0.09425 pd=0.94 as=0.09425 ps=0.94 w=0.65 l=2
+X10 S1_0 G D0_0 VSUBS sky130_fd_pr__nfet_01v8 ad=0.09425 pd=0.94 as=0.1885 ps=1.88 w=0.65 l=2
+X11 S1_1 G D0_1 VSUBS sky130_fd_pr__nfet_01v8 ad=0.09425 pd=0.94 as=0.1885 ps=1.88 w=0.65 l=2
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_BTD3CR D0 G0 S1 G1 a_429_n34# VSUBS
+X0 a_429_n34# G1 S1 VSUBS sky130_fd_pr__nfet_01v8 ad=0.1885 pd=1.88 as=0.09425 ps=0.94 w=0.65 l=2
+X1 S1 G0 D0 VSUBS sky130_fd_pr__nfet_01v8 ad=0.09425 pd=0.94 as=0.1885 ps=1.88 w=0.65 l=2
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_6S36KN G D0 S1 D2 S2 VSUBS
+X0 D2 G S1 VSUBS sky130_fd_pr__nfet_01v8 ad=0.09425 pd=0.94 as=0.09425 ps=0.94 w=0.65 l=2
+X1 S1 G D0 VSUBS sky130_fd_pr__nfet_01v8 ad=0.09425 pd=0.94 as=0.1885 ps=1.88 w=0.65 l=2
+X2 S2 G D2 VSUBS sky130_fd_pr__nfet_01v8 ad=0.1885 pd=1.88 as=0.09425 ps=0.94 w=0.65 l=2
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_lvt_HZYT8B B D0 G0 S1 G1 D1
+X0 D1 G1 S1 B sky130_fd_pr__pfet_01v8_lvt ad=0.3625 pd=3.08 as=0.18125 ps=1.54 w=1.25 l=0.5
+X1 S1 G0 D0 B sky130_fd_pr__pfet_01v8_lvt ad=0.18125 pd=1.54 as=0.3625 ps=3.08 w=1.25 l=0.5
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_HBWYJE D0 G S1 VSUBS
+X0 S1 G D0 VSUBS sky130_fd_pr__nfet_01v8 ad=0.09425 pd=0.94 as=0.1885 ps=1.88 w=0.65 l=2
+X1 a_429_n65# G S1 VSUBS sky130_fd_pr__nfet_01v8 ad=0.1885 pd=1.88 as=0.09425 ps=0.94 w=0.65 l=2
+.ends
+
+.subckt ota_v3
+XM9_10 M9_10/G0 M9_10/G0 M9_10/S1 Mc/VSUBS sky130_fd_pr__nfet_01v8_PJC3NT
+XM5_top M5_top/G M5_left/S1 M5_left/S1 M5_left/D2 M5_left/D2 M5_left/S2 M5_left/S2
++ M5_top/S3_1 M5_top/S3_1 M5_top/D4_1 M5_top/D4_1 M5_top/S5_1 M5_top/S5_1 M5_right/D2
++ M5_right/D2 Mc/VSUBS sky130_fd_pr__nfet_01v8_LPGTGV
+Xsky130_fd_pr__nfet_01v8_BTD3CR_0 sky130_fd_pr__nfet_01v8_BTD3CR_0/D0 sky130_fd_pr__nfet_01v8_BTD3CR_0/G0
++ sky130_fd_pr__nfet_01v8_BTD3CR_0/S1 sky130_fd_pr__nfet_01v8_BTD3CR_0/G1 sky130_fd_pr__pfet_01v8_lvt_HZYT8B_0/D1
++ Mc/VSUBS sky130_fd_pr__nfet_01v8_BTD3CR
+XM5_bottom M5_top/G M5_left/S1 M5_left/S1 M5_left/D2 M5_left/D2 M5_left/S2 M5_left/S2
++ M5_top/S3_1 M5_top/S3_1 M5_top/D4_1 M5_top/D4_1 M5_top/S5_1 M5_top/S5_1 M5_right/D2
++ M5_right/D2 Mc/VSUBS sky130_fd_pr__nfet_01v8_LPGTGV
+XM5_right M5_right/G M5_top/D4_1 M5_top/S5_1 M5_right/D2 M5_right/S2 Mc/VSUBS sky130_fd_pr__nfet_01v8_6S36KN
+Xsky130_fd_pr__pfet_01v8_lvt_HZYT8B_0 sky130_fd_pr__pfet_01v8_lvt_HZYT8B_0/B sky130_fd_pr__nfet_01v8_BTD3CR_0/D0
++ sky130_fd_pr__pfet_01v8_lvt_HZYT8B_0/G0 sky130_fd_pr__pfet_01v8_lvt_HZYT8B_0/B sky130_fd_pr__pfet_01v8_lvt_HZYT8B_0/G1
++ sky130_fd_pr__pfet_01v8_lvt_HZYT8B_0/D1 sky130_fd_pr__pfet_01v8_lvt_HZYT8B
+XMc Mc/D0 Mc/G Mc/S1 Mc/VSUBS sky130_fd_pr__nfet_01v8_HBWYJE
+XM5_left M5_left/G M5_left/D0 M5_left/S1 M5_left/D2 M5_left/S2 Mc/VSUBS sky130_fd_pr__nfet_01v8_6S36KN
+.ends
+

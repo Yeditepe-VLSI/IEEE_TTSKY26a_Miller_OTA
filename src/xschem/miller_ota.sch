@@ -306,7 +306,7 @@ C {ipin.sym} 1450 -80 2 0 {name=p12 lab=inp}
 C {lab_pin.sym} 1840 -360 1 0 {name=p13 sig_type=std_logic lab=VDPWR}
 C {lab_pin.sym} 1660 -280 0 0 {name=p14 sig_type=std_logic lab=vref}
 C {sky130_fd_pr/nfet_01v8.sym} 1860 -130 0 1 {name=M9
-W=0.55
+W=0.65
 L=2
 nf=1 
 mult=1
@@ -320,7 +320,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1860 -20 0 1 {name=M10
-W=0.55
+W=0.65
 L=2
 nf=1 
 mult=1
@@ -371,10 +371,10 @@ C {lab_pin.sym} 2300 -350 1 0 {name=p20 sig_type=std_logic lab=VDPWR}
 C {lab_pin.sym} 2120 -270 0 0 {name=p21 sig_type=std_logic lab=vref}
 C {opin.sym} 2630 -150 0 0 {name=p22 lab=out}
 C {sky130_fd_pr/pfet_01v8.sym} 1820 -280 0 0 {name=M8
-W=5.6
+W=5.3
 L=1
 nf=1
-mult=2
+mult=1
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
 pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
 as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"

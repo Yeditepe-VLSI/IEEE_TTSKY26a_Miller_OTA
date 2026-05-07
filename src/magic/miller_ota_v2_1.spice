@@ -1,0 +1,15 @@
+* NGSPICE file created from miller_ota_v2_1.ext - technology: sky130A
+
+.subckt miller_ota_v2_1
+X0 a_n3940_1260# a_n4810_4630# a_n4210_3820# a_n4470_3670# sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.8 as=0.8 ps=4.8 w=2 l=1
+X1 a_n4810_4630# a_n4210_3820# a_n4470_3670# a_n4470_3670# sky130_fd_pr__nfet_01v8 ad=0.4 pd=2.8 as=0.4 ps=2.8 w=1 l=0.15
+X2 w_n4330_2210# a_n3940_1260# a_n4210_3820# w_n4330_2210# sky130_fd_pr__pfet_01v8 ad=2 pd=10.4 as=4 ps=20.8 w=10 l=1
+X3 w_n570_n260# a_n230_210# a_n550_n640# w_n570_n260# sky130_fd_pr__pfet_01v8_lvt ad=0.3125 pd=1.75 as=0.625 ps=3.5 w=1.25 l=0.5
+X4 a_150_n70# a_n550_n640# a_n4470_3670# a_n4470_3670# sky130_fd_pr__nfet_01v8 ad=0.325 pd=2.3 as=0.1625 ps=1.15 w=0.65 l=2
+X5 a_n3940_1260# a_n3940_1260# w_n4330_2210# w_n4330_2210# sky130_fd_pr__pfet_01v8 ad=4 pd=20.8 as=2 ps=10.4 w=10 l=1
+X6 a_n4470_3670# a_n550_n640# a_n550_n640# a_n4470_3670# sky130_fd_pr__nfet_01v8 ad=0.1625 pd=1.15 as=0.325 ps=2.3 w=0.65 l=2
+X7 w_n570_n260# a_n100_970# w_n570_810# w_n570_810# sky130_fd_pr__pfet_01v8 ad=2.65 pd=11.6 as=2.65 ps=11.6 w=5.3 l=1
+X8 a_150_n70# a_50_n98# w_n570_n260# w_n570_n260# sky130_fd_pr__pfet_01v8_lvt ad=0.625 pd=3.5 as=0.3125 ps=1.75 w=1.25 l=0.5
+X9 a_n4810_4630# a_n4810_4630# w_n5070_4470# w_n5070_4470# sky130_fd_pr__pfet_01v8 ad=0.2 pd=1.8 as=0.2 ps=1.8 w=0.5 l=10
+.ends
+
