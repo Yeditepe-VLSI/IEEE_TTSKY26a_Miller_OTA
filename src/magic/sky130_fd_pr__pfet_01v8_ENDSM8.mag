@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1778153981
+timestamp 1778195957
 << nwell >>
 rect -97 -296 97 296
 << pmos >>
@@ -11,8 +11,4 @@ rect 50 -265 79 265
 << poly >>
 rect -50 265 50 278
 rect -50 -278 50 -265
-<< properties >>
-string gencell sky130_fd_pr__pfet_01v8
-string library sky130
-string parameters w 5.3 l 1 m 1 nf 1 diffcov 100 polycov 100 guard 0 glc 0 grc 0 gtc 0 gbc 0 tbcov 100 rlcov 100 topc 0 botc 0 poverlap 0 doverlap 1 lmin 0.15 wmin 0.42 class mosfet compatible {sky130_fd_pr__pfet_01v8  sky130_fd_pr__pfet_01v8_lvt sky130_fd_pr__pfet_01v8_hvt  sky130_fd_pr__pfet_g5v0d10v5} full_metal 0 conn_gates 0 viasrc 100 viadrn 100 viagate 100 viagb 0 viagr 0 viagl 0 viagt 0 doports 1
 << end >>

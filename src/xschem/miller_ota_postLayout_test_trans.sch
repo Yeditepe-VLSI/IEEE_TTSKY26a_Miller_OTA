@@ -19,10 +19,6 @@ N 20 -160 20 -50 {lab=vdd}
 N -370 -130 -370 -90 {lab=vdd}
 N -370 -140 -370 -130 {lab=vdd}
 N -370 -150 -370 -140 {lab=vdd}
-N -120 -20 -60 -20 {lab=out}
-N -120 -230 -120 -20 {lab=out}
-N -120 -230 180 -230 {lab=out}
-N 180 -230 180 -0 {lab=out}
 N -250 100 -250 140 {lab=0}
 N -250 20 -190 20 {lab=#net1}
 N -250 20 -250 40 {lab=#net1}
@@ -40,7 +36,7 @@ footprint=1206
 device="ceramic capacitor"}
 C {gnd.sym} 240 140 0 0 {name=l3 lab=0}
 C {lab_pin.sym} 330 0 2 0 {name=p1 sig_type=std_logic lab=out}
-C {code_shown.sym} 300 50 0 0 {name=SPICE only_toplevel=false value=".include ~/github_repos/TTSKY26a_Miller_OTA/src/xschem/tt_um_analog_ota_version1.spice
+C {code_shown.sym} 300 50 0 0 {name=SPICE only_toplevel=false value=".include ~/Desktop/IEEE_TTSKY26a_Miller_OTA/src/magic/TOP_flat_copy.spice
 .tran 100p 10000n
 .save all
 .control

@@ -23,8 +23,6 @@ N 220 170 300 170 {lab=VGND}
 N 220 170 220 240 {lab=VGND}
 N 220 240 300 240 {lab=VGND}
 N 500 170 600 170 {lab=#net3}
-N 600 170 600 240 {lab=#net3}
-N 500 240 600 240 {lab=#net3}
 N -110 -10 -30 -10 {lab=VGND}
 N -110 -10 -110 40 {lab=VGND}
 N -110 40 -30 40 {lab=VGND}
@@ -41,35 +39,35 @@ N 230 -120 300 -120 {lab=VDPWR}
 N 500 -70 580 -70 {lab=VDPWR}
 N 580 -120 580 -70 {lab=VDPWR}
 N 500 -120 580 -120 {lab=VDPWR}
-N 500 200 500 290 {lab=#net3}
+N 500 200 500 290 {lab=#net4}
 N 500 350 500 390 {lab=VGND}
 N 300 330 300 400 {lab=VGND}
 N -30 330 -30 400 {lab=VGND}
 N 480 320 480 370 {lab=VGND}
 N 480 370 500 370 {lab=VGND}
 N 500 -10 670 -10 {lab=vref}
-N 1060 -50 1060 140 {lab=#net4}
-N 1340 -50 1340 140 {lab=#net5}
-N 1060 180 1160 180 {lab=#net4}
-N 1160 180 1160 260 {lab=#net4}
-N 1100 260 1160 260 {lab=#net4}
-N 1160 260 1300 260 {lab=#net4}
+N 1060 -50 1060 140 {lab=#net5}
+N 1340 -50 1340 140 {lab=#net6}
+N 1060 180 1160 180 {lab=#net5}
+N 1160 180 1160 260 {lab=#net5}
+N 1100 260 1160 260 {lab=#net5}
+N 1160 260 1300 260 {lab=#net5}
 N 970 260 970 330 {lab=VGND}
 N 970 330 1060 330 {lab=VGND}
 N 1340 260 1430 260 {lab=VGND}
 N 1430 260 1430 320 {lab=VGND}
 N 1430 320 1430 330 {lab=VGND}
 N 1340 330 1430 330 {lab=VGND}
-N 1060 -80 1150 -80 {lab=#net6}
-N 1060 -160 1060 -110 {lab=#net6}
-N 1060 -160 1150 -160 {lab=#net6}
-N 1150 -160 1150 -80 {lab=#net6}
-N 1250 -80 1340 -80 {lab=#net6}
-N 1340 -160 1340 -110 {lab=#net6}
-N 1250 -160 1340 -160 {lab=#net6}
-N 1250 -160 1250 -80 {lab=#net6}
-N 1150 -160 1250 -160 {lab=#net6}
-N 1200 -250 1200 -160 {lab=#net6}
+N 1060 -80 1150 -80 {lab=#net7}
+N 1060 -160 1060 -110 {lab=#net7}
+N 1060 -160 1150 -160 {lab=#net7}
+N 1150 -160 1150 -80 {lab=#net7}
+N 1250 -80 1340 -80 {lab=#net7}
+N 1340 -160 1340 -110 {lab=#net7}
+N 1250 -160 1340 -160 {lab=#net7}
+N 1250 -160 1250 -80 {lab=#net7}
+N 1150 -160 1250 -160 {lab=#net7}
+N 1200 -250 1200 -160 {lab=#net7}
 N 1200 -360 1200 -310 {lab=VDPWR}
 N 1020 -280 1150 -280 {lab=vref}
 N 1150 -280 1160 -280 {lab=vref}
@@ -83,36 +81,36 @@ N 1790 -280 1800 -280 {lab=vref}
 N 1840 -280 1950 -280 {lab=VDPWR}
 N 1950 -330 1950 -280 {lab=VDPWR}
 N 1840 -330 1950 -330 {lab=VDPWR}
-N 1840 -100 1840 -50 {lab=#net7}
-N 1840 -250 1840 -160 {lab=#net8}
-N 1840 -80 1910 -80 {lab=#net7}
-N 1910 -80 1910 -20 {lab=#net7}
-N 1880 -20 1910 -20 {lab=#net7}
-N 1840 -190 1910 -190 {lab=#net8}
-N 1910 -190 1910 -130 {lab=#net8}
-N 1880 -130 1910 -130 {lab=#net8}
-N 1910 -130 2060 -130 {lab=#net8}
+N 1840 -100 1840 -50 {lab=#net8}
+N 1840 -250 1840 -160 {lab=#net9}
+N 1840 -80 1910 -80 {lab=#net8}
+N 1910 -80 1910 -20 {lab=#net8}
+N 1880 -20 1910 -20 {lab=#net8}
+N 1840 -190 1910 -190 {lab=#net9}
+N 1910 -190 1910 -130 {lab=#net9}
+N 1880 -130 1910 -130 {lab=#net9}
+N 1910 -130 2060 -130 {lab=#net9}
 N 1840 10 1840 20 {lab=VGND}
-N 1340 130 2030 130 {lab=#net5}
+N 1340 130 2030 130 {lab=#net6}
 N 1060 290 1060 380 {lab=VGND}
 N 1340 290 1340 380 {lab=VGND}
-N 1060 140 1060 230 {lab=#net4}
-N 1340 140 1340 230 {lab=#net5}
+N 1060 140 1060 230 {lab=#net5}
+N 1340 140 1340 230 {lab=#net6}
 N 1750 -20 1840 -20 {lab=VGND}
 N 1840 20 1840 60 {lab=VGND}
 N 1750 -130 1830 -130 {lab=VGND}
 N 1830 -130 1840 -130 {lab=VGND}
 N 2060 -40 2060 60 {lab=VGND}
-N 2090 -40 2140 -40 {lab=#net9}
-N 2030 130 2200 130 {lab=#net5}
-N 1970 -40 2030 -40 {lab=#net5}
-N 1970 -40 1970 120 {lab=#net5}
-N 1970 120 1970 130 {lab=#net5}
-N 2060 -130 2060 -80 {lab=#net8}
+N 2090 -40 2140 -40 {lab=#net10}
+N 2030 130 2200 130 {lab=#net6}
+N 1970 -40 2030 -40 {lab=#net6}
+N 1970 -40 1970 120 {lab=#net6}
+N 1970 120 1970 130 {lab=#net6}
+N 2060 -130 2060 -80 {lab=#net9}
 N 2200 -40 2300 -40 {lab=out}
 N 2300 290 2300 380 {lab=VGND}
 N 2300 280 2300 290 {lab=VGND}
-N 2200 130 2260 130 {lab=#net5}
+N 2200 130 2260 130 {lab=#net6}
 N 2300 160 2300 280 {lab=VGND}
 N 2300 -40 2300 100 {lab=out}
 N 2300 130 2400 130 {lab=VGND}
@@ -190,7 +188,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 320 -70 0 1 {name=Mr1
-W=10
+W=5.3
 L=1
 nf=1
 mult=1
@@ -204,7 +202,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 480 -70 0 0 {name=Mr2
-W=10
+W=5.3
 L=1
 nf=1
 mult=1
@@ -238,14 +236,14 @@ C {lab_pin.sym} -30 -340 1 0 {name=p4 sig_type=std_logic lab=VDPWR}
 C {lab_pin.sym} 300 -160 1 0 {name=p6 sig_type=std_logic lab=VDPWR}
 C {lab_pin.sym} 500 -160 1 0 {name=p7 sig_type=std_logic lab=VDPWR}
 C {sky130_fd_pr/res_xhigh_po.sym} 500 320 0 0 {name=R1
-W=1
-L=4
+W=4
+L=25.5
 model=res_xhigh_po
 spiceprefix=X
 mult=1}
 C {lab_pin.sym} 670 -10 2 0 {name=p5 sig_type=std_logic lab=vref}
 C {sky130_fd_pr/nfet_01v8.sym} 1320 260 0 0 {name=M4
-W=0.65
+W=0.685
 L=2
 nf=1 
 mult=1
@@ -259,7 +257,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1080 260 0 1 {name=M3
-W=0.65
+W=0.685
 L=2
 nf=1 
 mult=1
@@ -306,7 +304,7 @@ C {ipin.sym} 1450 -80 2 0 {name=p12 lab=inp}
 C {lab_pin.sym} 1840 -360 1 0 {name=p13 sig_type=std_logic lab=VDPWR}
 C {lab_pin.sym} 1660 -280 0 0 {name=p14 sig_type=std_logic lab=vref}
 C {sky130_fd_pr/nfet_01v8.sym} 1860 -130 0 1 {name=M9
-W=0.55
+W=0.65
 L=2
 nf=1 
 mult=1
@@ -320,7 +318,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1860 -20 0 1 {name=M10
-W=0.55
+W=0.65
 L=2
 nf=1 
 mult=1
@@ -351,9 +349,9 @@ C {lab_pin.sym} 1840 60 3 0 {name=p15 sig_type=std_logic lab=VGND}
 C {lab_pin.sym} 1750 -130 0 0 {name=p16 sig_type=std_logic lab=VGND}
 C {lab_pin.sym} 1750 -20 0 0 {name=p17 sig_type=std_logic lab=VGND}
 C {lab_pin.sym} 2060 60 3 0 {name=p18 sig_type=std_logic lab=VGND}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 2170 -40 1 0 {name=C1 model=cap_mim_m3_1 W=20 L=20 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 2170 -40 1 0 {name=C1 model=cap_mim_m3_1 W=10.5 L=10.5 MF=1 spiceprefix=X}
 C {sky130_fd_pr/nfet_01v8.sym} 2280 130 0 0 {name=M5
-W=0.65
+W=0.685
 L=2
 nf=1 
 mult=30
@@ -371,10 +369,10 @@ C {lab_pin.sym} 2300 -350 1 0 {name=p20 sig_type=std_logic lab=VDPWR}
 C {lab_pin.sym} 2120 -270 0 0 {name=p21 sig_type=std_logic lab=vref}
 C {opin.sym} 2630 -150 0 0 {name=p22 lab=out}
 C {sky130_fd_pr/pfet_01v8.sym} 1820 -280 0 0 {name=M8
-W=5.6
+W=5.3
 L=1
 nf=1
-mult=2
+mult=1
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
 pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
 as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
@@ -416,3 +414,4 @@ C {ipin.sym} 970 -80 0 0 {name=p23 lab=inn}
 C {iopin.sym} 1200 -360 0 0 {name=p10 lab=VDPWR}
 C {iopin.sym} 1060 380 0 0 {name=p24 lab=VGND}
 C {lab_pin.sym} 190 -170 2 0 {name=p8 sig_type=std_logic lab=VGND}
+C {lab_pin.sym} 600 170 2 0 {name=p25 sig_type=std_logic lab=VGND}
