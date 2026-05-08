@@ -2,9 +2,9 @@ VERSION 5.7 ;
   NOWIREEXTENSIONATPIN ON ;
   DIVIDERCHAR "/" ;
   BUSBITCHARS "[]" ;
-MACRO tt_um_analog_ota_v3
+MACRO tt_um_analog_ota_v3_IEE
   CLASS BLOCK ;
-  FOREIGN tt_um_analog_ota_v3 ;
+  FOREIGN tt_um_analog_ota_v3_IEE ;
   ORIGIN 0.000 0.000 ;
   SIZE 161.000 BY 225.760 ;
   PIN clk
@@ -1475,6 +1475,6 @@ MACRO tt_um_analog_ota_v3
         RECT 51.320 9.730 51.800 20.510 ;
         RECT 128.600 9.730 129.080 20.510 ;
   END
-END tt_um_analog_ota_v3
+END tt_um_analog_ota_v3_IEE
 END LIBRARY
 
