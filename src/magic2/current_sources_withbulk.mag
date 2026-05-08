@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1778248032
+timestamp 1778249803
 << nwell >>
 rect -1433 2717 1733 5393
 << pdiff >>
@@ -4064,31 +4064,31 @@ rect 1525 3002 1577 3014
 rect 1525 2919 1577 2950
 rect -1021 2717 1319 2769
 use sky130_fd_pr__pfet_01v8_ENDSM8  M6
-timestamp 1778248032
+timestamp 1778249803
 transform 1 0 20 0 1 3456
 box -194 -592 194 592
 use sky130_fd_pr__pfet_01v8_ENDSM8  M8
-timestamp 1778248032
+timestamp 1778249803
 transform 1 0 278 0 1 3456
 box -194 -592 194 592
 use sky130_fd_pr__pfet_01v8_ENDSM8  MR1
-timestamp 1778248032
+timestamp 1778249803
 transform 1 0 20 0 1 4644
 box -194 -592 194 592
 use sky130_fd_pr__pfet_01v8_ENDSM8  MR2
-timestamp 1778248032
+timestamp 1778249803
 transform 1 0 278 0 1 4644
 box -194 -592 194 592
 use sky130_fd_pr__pfet_01v8_9KVHJQ  sky130_fd_pr__pfet_01v8_9KVHJQ_0
-timestamp 1778248032
+timestamp 1778249803
 transform 1 0 1035 0 1 4050
 box -581 -1224 581 1224
 use sky130_fd_pr__pfet_01v8_32X93E  sky130_fd_pr__pfet_01v8_32X93E_0
-timestamp 1778248032
+timestamp 1778249803
 transform 1 0 -737 0 1 3420
 box -581 -594 581 628
 use sky130_fd_pr__pfet_01v8_AJHM27  sky130_fd_pr__pfet_01v8_AJHM27_0
-timestamp 1778248032
+timestamp 1778249803
 transform 1 0 -608 0 1 4680
 box -452 -628 452 594
 << end >>

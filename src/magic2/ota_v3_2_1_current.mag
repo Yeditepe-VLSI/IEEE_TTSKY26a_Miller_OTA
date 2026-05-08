@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1778248032
+timestamp 1778249803
 << poly >>
 rect 3103 70 3107 116
 rect 3165 70 3169 116
@@ -319,23 +319,23 @@ rect 3568 -481 3620 -293
 rect 3568 -721 3620 -533
 rect 3568 -810 3620 -773
 use sky130_fd_pr__nfet_01v8_DYUMWS  M5_v2
-timestamp 1778248032
+timestamp 1778249803
 transform 1 0 2449 0 1 -147
 box -1302 -865 1302 865
 use sky130_fd_pr__nfet_01v8_BTD5D5  sky130_fd_pr__nfet_01v8_BTD5D5_0
-timestamp 1778248032
+timestamp 1778249803
 transform 1 0 599 0 1 -516
 box -513 -153 513 91
 use sky130_fd_pr__nfet_01v8_NJGPHB  sky130_fd_pr__nfet_01v8_NJGPHB_0
-timestamp 1778248032
+timestamp 1778249803
 transform 1 0 599 0 1 -199
 box -513 -122 513 122
 use sky130_fd_pr__nfet_01v8_YCG9D7  sky130_fd_pr__nfet_01v8_YCG9D7_0
-timestamp 1778248032
+timestamp 1778249803
 transform 1 0 599 0 1 -864
 box -513 -153 513 153
 use sky130_fd_pr__pfet_01v8_lvt_YE4XRW  sky130_fd_pr__pfet_01v8_lvt_YE4XRW_0
-timestamp 1778248032
+timestamp 1778249803
 transform 1 0 599 0 1 274
 box -325 -309 325 309
 << end >>

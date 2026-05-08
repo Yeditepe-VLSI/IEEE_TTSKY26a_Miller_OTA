@@ -1,0 +1,9 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1778250132
+use without_pins_v2  without_pins_v2_0
+timestamp 1778249935
+transform 1 0 4296 0 1 -9938
+box -4296 9938 25654 20411
+<< end >>
