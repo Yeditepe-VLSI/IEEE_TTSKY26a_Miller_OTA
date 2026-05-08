@@ -1,7 +1,11 @@
 magic
 tech sky130A
 magscale 1 2
+<<<<<<< Updated upstream
 timestamp 1777590984
+=======
+timestamp 1778153981
+>>>>>>> Stashed changes
 << nwell >>
 rect -194 -630 194 630
 << pmos >>
@@ -63,11 +67,19 @@ rect 84 -611 96 -577
 rect -96 -617 96 -611
 << labels >>
 rlabel pdiffc -129 0 -129 0 0 D
+<<<<<<< Updated upstream
 port 1 nsew
 rlabel pdiffc 129 0 129 0 0 S
 port 2 nsew
 rlabel polycont 0 594 0 594 0 G
 port 3 nsew
+=======
+port 10 nsew
+rlabel pdiffc 129 0 129 0 0 S
+port 11 nsew
+rlabel polycont 0 594 0 594 0 G
+port 12 nsew
+>>>>>>> Stashed changes
 << properties >>
 string gencell sky130_fd_pr__pfet_01v8
 string library sky130

@@ -1,0 +1,146 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1778153981
+<< nwell >>
+rect -581 -594 581 628
+<< pmos >>
+rect -487 -494 -287 566
+rect -229 -494 -29 566
+rect 29 -494 229 566
+rect 287 -494 487 566
+<< pdiff >>
+rect -545 554 -487 566
+rect -545 -482 -533 554
+rect -499 -482 -487 554
+rect -545 -494 -487 -482
+rect -287 554 -229 566
+rect -287 -482 -275 554
+rect -241 -482 -229 554
+rect -287 -494 -229 -482
+rect -29 554 29 566
+rect -29 -482 -17 554
+rect 17 -482 29 554
+rect -29 -494 29 -482
+rect 229 554 287 566
+rect 229 -482 241 554
+rect 275 -482 287 554
+rect 229 -494 287 -482
+rect 487 554 545 566
+rect 487 -482 499 554
+rect 533 -482 545 554
+rect 487 -494 545 -482
+<< pdiffc >>
+rect -533 -482 -499 554
+rect -275 -482 -241 554
+rect -17 -482 17 554
+rect 241 -482 275 554
+rect 499 -482 533 554
+<< poly >>
+rect -487 566 -287 592
+rect -229 566 -29 592
+rect 29 566 229 592
+rect 287 566 487 592
+rect -487 -541 -287 -494
+rect -487 -575 -471 -541
+rect -303 -575 -287 -541
+rect -487 -591 -287 -575
+rect -229 -541 -29 -494
+rect -229 -575 -213 -541
+rect -45 -575 -29 -541
+rect -229 -591 -29 -575
+rect 29 -541 229 -494
+rect 29 -575 45 -541
+rect 213 -575 229 -541
+rect 29 -591 229 -575
+rect 287 -541 487 -494
+rect 287 -575 303 -541
+rect 471 -575 487 -541
+rect 287 -591 487 -575
+<< polycont >>
+rect -471 -575 -303 -541
+rect -213 -575 -45 -541
+rect 45 -575 213 -541
+rect 303 -575 471 -541
+<< locali >>
+rect -533 554 -499 570
+rect -533 -498 -499 -482
+rect -275 554 -241 570
+rect -275 -498 -241 -482
+rect -17 554 17 570
+rect -17 -498 17 -482
+rect 241 554 275 570
+rect 241 -498 275 -482
+rect 499 554 533 570
+rect 499 -498 533 -482
+rect -516 -575 -471 -541
+rect -303 -575 -213 -541
+rect -45 -575 45 -541
+rect 213 -575 303 -541
+rect 471 -575 516 -541
+<< viali >>
+rect -533 -482 -499 554
+rect -275 -482 -241 554
+rect -17 -482 17 554
+rect 241 -482 275 554
+rect 499 -482 533 554
+rect -471 -575 -303 -541
+rect -213 -575 -45 -541
+rect 45 -575 213 -541
+rect 303 -575 471 -541
+<< metal1 >>
+rect -539 554 -493 566
+rect -539 -482 -533 554
+rect -499 -482 -493 554
+rect -539 -494 -493 -482
+rect -281 554 -235 566
+rect -281 -482 -275 554
+rect -241 -482 -235 554
+rect -281 -494 -235 -482
+rect -23 554 23 566
+rect -23 -482 -17 554
+rect 17 -482 23 554
+rect -23 -494 23 -482
+rect 235 554 281 566
+rect 235 -482 241 554
+rect 275 -482 281 554
+rect 235 -494 281 -482
+rect 493 554 539 566
+rect 493 -482 499 554
+rect 533 -482 539 554
+rect 493 -494 539 -482
+rect -483 -541 -291 -535
+rect -225 -541 -33 -535
+rect 33 -541 225 -535
+rect 291 -541 483 -535
+rect -516 -575 -471 -541
+rect -303 -575 -213 -541
+rect -45 -575 45 -541
+rect 213 -575 303 -541
+rect 471 -575 516 -541
+rect -483 -581 -291 -575
+rect -225 -581 -33 -575
+rect 33 -581 225 -575
+rect 291 -581 483 -575
+<< labels >>
+rlabel pdiffc -516 36 -516 36 0 D0
+port 1 nsew
+rlabel polycont -387 -558 -387 -558 0 G
+port 2 nsew
+rlabel pdiffc -258 36 -258 36 0 S1
+port 3 nsew
+rlabel polycont -129 -558 -129 -558 0 G
+port 2 nsew
+rlabel pdiffc 0 36 0 36 0 D2
+port 4 nsew
+rlabel polycont 129 -558 129 -558 0 G
+port 2 nsew
+rlabel pdiffc 258 36 258 36 0 S3
+port 5 nsew
+rlabel polycont 387 -558 387 -558 0 G
+port 2 nsew
+<< properties >>
+string gencell sky130_fd_pr__pfet_01v8
+string library sky130
+string parameters w 5.3 l 1 m 1 nf 4 diffcov 100 polycov 100 guard 0 glc 0 grc 0 gtc 0 gbc 0 tbcov 100 rlcov 100 topc 0 botc 1 poverlap 0 doverlap 1 lmin 0.15 wmin 0.42 class mosfet compatible {sky130_fd_pr__pfet_01v8  sky130_fd_pr__pfet_01v8_lvt sky130_fd_pr__pfet_01v8_hvt  sky130_fd_pr__pfet_g5v0d10v5} full_metal 0 conn_gates 1 viasrc 100 viadrn 100 viagate 100 viagb 0 viagr 0 viagl 0 viagt 0 doports 1
+<< end >>
