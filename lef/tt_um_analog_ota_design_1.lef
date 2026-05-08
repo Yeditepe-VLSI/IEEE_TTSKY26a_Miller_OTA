@@ -2,9 +2,9 @@ VERSION 5.7 ;
   NOWIREEXTENSIONATPIN ON ;
   DIVIDERCHAR "/" ;
   BUSBITCHARS "[]" ;
-MACRO ota_design_1
+MACRO tt_um_analog_ota_design_1
   CLASS BLOCK ;
-  FOREIGN ota_design_1 ;
+  FOREIGN tt_um_analog_ota_design_1 ;
   ORIGIN 0.000 0.000 ;
   SIZE 161.000 BY 225.760 ;
   PIN clk
@@ -1020,6 +1020,6 @@ MACRO ota_design_1
       LAYER met4 ;
         RECT 103.420 17.820 103.900 28.600 ;
   END
-END ota_design_1
+END tt_um_analog_ota_design_1
 END LIBRARY
 
