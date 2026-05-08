@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1778246747
+timestamp 1778248032
 << nwell >>
 rect 7973 7816 11139 8714
 rect 23429 7816 26595 8714
@@ -22,12 +22,12 @@ rect 6136 4161 6222 6611
 rect 6280 4307 6648 6469
 rect 6650 4307 7018 5359
 rect 7020 4307 7388 6469
-rect 7442 4161 7528 6611
+rect 7442 5124 7528 6611
 rect 18598 6889 19480 6975
-rect 7530 4942 8556 5124
-rect 7530 4594 8556 4776
-rect 7530 4246 8556 4428
-rect 8591 4189 11195 5919
+rect 8591 5124 11195 5919
+rect 7442 4246 11195 5124
+rect 7442 4161 7528 4246
+rect 8591 4189 11195 4246
 rect 6136 4075 7528 4161
 rect 3142 2231 4024 2317
 rect 18598 2317 18684 6889
@@ -39,11 +39,11 @@ rect 21592 4161 21678 6611
 rect 21736 4307 22104 6469
 rect 22106 4307 22474 5359
 rect 22476 4307 22844 6469
-rect 22898 4161 22984 6611
-rect 22986 4942 24012 5124
-rect 22986 4594 24012 4776
-rect 22986 4246 24012 4428
-rect 24047 4189 26651 5919
+rect 22898 5124 22984 6611
+rect 24047 5124 26651 5919
+rect 22898 4246 26651 5124
+rect 22898 4161 22984 4246
+rect 24047 4189 26651 4246
 rect 21592 4075 22984 4161
 rect 18598 2231 19480 2317
 << nmos >>
@@ -32540,192 +32540,279 @@ rect 22634 0 22814 1339
 rect 26498 0 26678 1406
 rect 30362 0 30542 5593
 use current_sources_withbulk  current_sources_withbulk_0
-timestamp 1778186451
+timestamp 1778248032
 transform 1 0 24862 0 1 3321
 box -1433 2717 1733 5393
 use current_sources_withbulk  current_sources_withbulk_1
-timestamp 1778186451
+timestamp 1778248032
 transform 1 0 9406 0 1 3321
 box -1433 2717 1733 5393
 use ota_v3_2_1_current  ota_v3_2_1_current_0
-timestamp 1778188753
+timestamp 1778248032
 transform 1 0 22900 0 1 5201
 box 86 -1017 3751 718
 use ota_v3_2_1_current  ota_v3_2_1_current_1
-timestamp 1778188753
+timestamp 1778248032
 transform 1 0 7444 0 1 5201
 box 86 -1017 3751 718
 use sky130_fd_pr__cap_mim_m3_1_K4L3LX  sky130_fd_pr__cap_mim_m3_1_K4L3LX_0
-timestamp 1778188753
+timestamp 1778248032
 transform 1 0 24554 0 1 3024
 box -1266 -1090 1266 1090
 use sky130_fd_pr__cap_mim_m3_1_K4L3LX  sky130_fd_pr__cap_mim_m3_1_K4L3LX_1
-timestamp 1778188753
+timestamp 1778248032
 transform 1 0 9098 0 1 3024
 box -1266 -1090 1266 1090
 use sky130_fd_pr__nfet_01v8_ES745V  sky130_fd_pr__nfet_01v8_ES745V_0
-timestamp 1778186451
+timestamp 1778248032
 transform 1 0 22660 0 1 5388
 box -184 -1081 184 1143
 use sky130_fd_pr__nfet_01v8_ES745V  sky130_fd_pr__nfet_01v8_ES745V_1
-timestamp 1778186451
+timestamp 1778248032
 transform 1 0 21920 0 1 5388
 box -184 -1081 184 1143
 use sky130_fd_pr__nfet_01v8_ES745V  sky130_fd_pr__nfet_01v8_ES745V_2
-timestamp 1778186451
+timestamp 1778248032
 transform 1 0 7204 0 1 5388
 box -184 -1081 184 1143
 use sky130_fd_pr__nfet_01v8_ES745V  sky130_fd_pr__nfet_01v8_ES745V_3
-timestamp 1778186451
+timestamp 1778248032
 transform 1 0 6464 0 1 5388
 box -184 -1081 184 1143
 use sky130_fd_pr__nfet_01v8_S5TDRT  sky130_fd_pr__nfet_01v8_S5TDRT_0
-timestamp 1778186451
+timestamp 1778248032
 transform 1 0 22800 0 1 6990
 box -184 -226 184 288
 use sky130_fd_pr__nfet_01v8_S5TDRT  sky130_fd_pr__nfet_01v8_S5TDRT_1
-timestamp 1778186451
+timestamp 1778248032
 transform 1 0 7344 0 1 6990
 box -184 -226 184 288
 use sky130_fd_pr__nfet_01v8_V5JU8A  sky130_fd_pr__nfet_01v8_V5JU8A_0
-timestamp 1778186451
+timestamp 1778248032
 transform 1 0 22290 0 1 4833
 box -184 -526 184 588
 use sky130_fd_pr__nfet_01v8_V5JU8A  sky130_fd_pr__nfet_01v8_V5JU8A_1
-timestamp 1778186451
+timestamp 1778248032
 transform 1 0 6834 0 1 4833
 box -184 -526 184 588
 use sky130_fd_pr__nfet_01v8_VUE4HL  sky130_fd_pr__nfet_01v8_VUE4HL_0
-timestamp 1778186451
+timestamp 1778248032
 transform 1 0 22504 0 1 6890
 box -99 -188 99 126
 use sky130_fd_pr__nfet_01v8_VUE4HL  sky130_fd_pr__nfet_01v8_VUE4HL_1
-timestamp 1778186451
+timestamp 1778248032
 transform 1 0 7048 0 1 6890
 box -99 -188 99 126
 use sky130_fd_pr__pfet_01v8_SDNS9K  sky130_fd_pr__pfet_01v8_SDNS9K_0
-timestamp 1778183247
+timestamp 1778248032
 transform 1 0 22238 0 1 7553
 box -1094 -150 1094 150
 use sky130_fd_pr__pfet_01v8_SDNS9K  sky130_fd_pr__pfet_01v8_SDNS9K_1
-timestamp 1778183247
+timestamp 1778248032
 transform 1 0 6782 0 1 7553
 box -1094 -150 1094 150
 use sky130_fd_pr__res_xhigh_po_2p85_V7QCW3  sky130_fd_pr__res_xhigh_po_2p85_V7QCW3_0
-timestamp 1778195335
+timestamp 1778248032
 transform 1 0 19039 0 1 4603
 box -441 -2372 441 2372
 use sky130_fd_pr__res_xhigh_po_2p85_V7QCW3  sky130_fd_pr__res_xhigh_po_2p85_V7QCW3_1
-timestamp 1778195335
+timestamp 1778248032
 transform 1 0 3583 0 1 4603
 box -441 -2372 441 2372
 << labels >>
-flabel metal4 s 28766 44952 28826 45152 0 FreeSans 600 90 0 0 clk
+rlabel locali s 8540 8559 8540 8559 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_AJHM27_0.G0
+rlabel locali s 8798 8559 8798 8559 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_AJHM27_0.G1
+rlabel locali s 9056 8559 9056 8559 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_AJHM27_0.G2
+flabel metal4 s 28766 44952 28826 45152 0 FreeSans 750 90 0 0 clk
 port 1 nsew
-flabel metal4 s 29318 44952 29378 45152 0 FreeSans 600 90 0 0 ena
+flabel metal4 s 29318 44952 29378 45152 0 FreeSans 750 90 0 0 ena
 port 2 nsew
-flabel metal4 s 28214 44952 28274 45152 0 FreeSans 600 90 0 0 rst_n
+flabel metal4 s 28214 44952 28274 45152 0 FreeSans 750 90 0 0 rst_n
 port 3 nsew
-flabel metal4 s 30362 0 30542 200 0 FreeSans 1200 0 0 0 ua[0]
+flabel metal4 s 30362 0 30542 200 0 FreeSans 1500 0 0 0 ua[0]
 port 4 nsew
-flabel metal4 s 26498 0 26678 200 0 FreeSans 1200 0 0 0 ua[1]
+flabel metal4 s 26498 0 26678 200 0 FreeSans 1500 0 0 0 ua[1]
 port 5 nsew
-flabel metal4 s 22634 0 22814 200 0 FreeSans 1200 0 0 0 ua[2]
+flabel metal4 s 22634 0 22814 200 0 FreeSans 1500 0 0 0 ua[2]
 port 6 nsew
-flabel metal4 s 18770 0 18950 200 0 FreeSans 1200 0 0 0 ua[3]
+flabel metal4 s 18770 0 18950 200 0 FreeSans 1500 0 0 0 ua[3]
 port 7 nsew
-flabel metal4 s 14906 0 15086 200 0 FreeSans 1200 0 0 0 ua[4]
+flabel metal4 s 14906 0 15086 200 0 FreeSans 1500 0 0 0 ua[4]
 port 8 nsew
-flabel metal4 s 11042 0 11222 200 0 FreeSans 1200 0 0 0 ua[5]
+flabel metal4 s 11042 0 11222 200 0 FreeSans 1500 0 0 0 ua[5]
 port 9 nsew
-flabel metal4 s 7178 0 7358 200 0 FreeSans 1200 0 0 0 ua[6]
+flabel metal4 s 7178 0 7358 200 0 FreeSans 1500 0 0 0 ua[6]
 port 10 nsew
-flabel metal4 s 3314 0 3494 200 0 FreeSans 1200 0 0 0 ua[7]
+flabel metal4 s 3314 0 3494 200 0 FreeSans 1500 0 0 0 ua[7]
 port 11 nsew
-flabel metal4 s 27662 44952 27722 45152 0 FreeSans 600 90 0 0 ui_in[0]
+flabel metal4 s 27662 44952 27722 45152 0 FreeSans 750 90 0 0 ui_in[0]
 port 12 nsew
-flabel metal4 s 27110 44952 27170 45152 0 FreeSans 600 90 0 0 ui_in[1]
+flabel metal4 s 27110 44952 27170 45152 0 FreeSans 750 90 0 0 ui_in[1]
 port 13 nsew
-flabel metal4 s 26558 44952 26618 45152 0 FreeSans 600 90 0 0 ui_in[2]
+flabel metal4 s 26558 44952 26618 45152 0 FreeSans 750 90 0 0 ui_in[2]
 port 14 nsew
-flabel metal4 s 26006 44952 26066 45152 0 FreeSans 600 90 0 0 ui_in[3]
+flabel metal4 s 26006 44952 26066 45152 0 FreeSans 750 90 0 0 ui_in[3]
 port 15 nsew
-flabel metal4 s 25454 44952 25514 45152 0 FreeSans 600 90 0 0 ui_in[4]
+flabel metal4 s 25454 44952 25514 45152 0 FreeSans 750 90 0 0 ui_in[4]
 port 16 nsew
-flabel metal4 s 24902 44952 24962 45152 0 FreeSans 600 90 0 0 ui_in[5]
+flabel metal4 s 24902 44952 24962 45152 0 FreeSans 750 90 0 0 ui_in[5]
 port 17 nsew
-flabel metal4 s 24350 44952 24410 45152 0 FreeSans 600 90 0 0 ui_in[6]
+flabel metal4 s 24350 44952 24410 45152 0 FreeSans 750 90 0 0 ui_in[6]
 port 18 nsew
-flabel metal4 s 23798 44952 23858 45152 0 FreeSans 600 90 0 0 ui_in[7]
+flabel metal4 s 23798 44952 23858 45152 0 FreeSans 750 90 0 0 ui_in[7]
 port 19 nsew
-flabel metal4 s 23246 44952 23306 45152 0 FreeSans 600 90 0 0 uio_in[0]
+flabel metal4 s 23246 44952 23306 45152 0 FreeSans 750 90 0 0 uio_in[0]
 port 20 nsew
-flabel metal4 s 22694 44952 22754 45152 0 FreeSans 600 90 0 0 uio_in[1]
+flabel metal4 s 22694 44952 22754 45152 0 FreeSans 750 90 0 0 uio_in[1]
 port 21 nsew
-flabel metal4 s 22142 44952 22202 45152 0 FreeSans 600 90 0 0 uio_in[2]
+flabel metal4 s 22142 44952 22202 45152 0 FreeSans 750 90 0 0 uio_in[2]
 port 22 nsew
-flabel metal4 s 21590 44952 21650 45152 0 FreeSans 600 90 0 0 uio_in[3]
+flabel metal4 s 21590 44952 21650 45152 0 FreeSans 750 90 0 0 uio_in[3]
 port 23 nsew
-flabel metal4 s 21038 44952 21098 45152 0 FreeSans 600 90 0 0 uio_in[4]
+flabel metal4 s 21038 44952 21098 45152 0 FreeSans 750 90 0 0 uio_in[4]
 port 24 nsew
-flabel metal4 s 20486 44952 20546 45152 0 FreeSans 600 90 0 0 uio_in[5]
+flabel metal4 s 20486 44952 20546 45152 0 FreeSans 750 90 0 0 uio_in[5]
 port 25 nsew
-flabel metal4 s 19934 44952 19994 45152 0 FreeSans 600 90 0 0 uio_in[6]
+flabel metal4 s 19934 44952 19994 45152 0 FreeSans 750 90 0 0 uio_in[6]
 port 26 nsew
-flabel metal4 s 19382 44952 19442 45152 0 FreeSans 600 90 0 0 uio_in[7]
+flabel metal4 s 19382 44952 19442 45152 0 FreeSans 750 90 0 0 uio_in[7]
 port 27 nsew
-flabel metal4 s 9998 44952 10058 45152 0 FreeSans 600 90 0 0 uio_oe[0]
+flabel metal4 s 9998 44952 10058 45152 0 FreeSans 750 90 0 0 uio_oe[0]
 port 28 nsew
-flabel metal4 s 9446 44952 9506 45152 0 FreeSans 600 90 0 0 uio_oe[1]
+flabel metal4 s 9446 44952 9506 45152 0 FreeSans 750 90 0 0 uio_oe[1]
 port 29 nsew
-flabel metal4 s 8894 44952 8954 45152 0 FreeSans 600 90 0 0 uio_oe[2]
+flabel metal4 s 8894 44952 8954 45152 0 FreeSans 750 90 0 0 uio_oe[2]
 port 30 nsew
-flabel metal4 s 8342 44952 8402 45152 0 FreeSans 600 90 0 0 uio_oe[3]
+flabel metal4 s 8342 44952 8402 45152 0 FreeSans 750 90 0 0 uio_oe[3]
 port 31 nsew
-flabel metal4 s 7790 44952 7850 45152 0 FreeSans 600 90 0 0 uio_oe[4]
+flabel metal4 s 7790 44952 7850 45152 0 FreeSans 750 90 0 0 uio_oe[4]
 port 32 nsew
-flabel metal4 s 7238 44952 7298 45152 0 FreeSans 600 90 0 0 uio_oe[5]
+flabel metal4 s 7238 44952 7298 45152 0 FreeSans 750 90 0 0 uio_oe[5]
 port 33 nsew
-flabel metal4 s 6686 44952 6746 45152 0 FreeSans 600 90 0 0 uio_oe[6]
+flabel metal4 s 6686 44952 6746 45152 0 FreeSans 750 90 0 0 uio_oe[6]
 port 34 nsew
-flabel metal4 s 6134 44952 6194 45152 0 FreeSans 600 90 0 0 uio_oe[7]
+flabel metal4 s 6134 44952 6194 45152 0 FreeSans 750 90 0 0 uio_oe[7]
 port 35 nsew
-flabel metal4 s 14414 44952 14474 45152 0 FreeSans 600 90 0 0 uio_out[0]
+flabel metal4 s 14414 44952 14474 45152 0 FreeSans 750 90 0 0 uio_out[0]
 port 36 nsew
-flabel metal4 s 13862 44952 13922 45152 0 FreeSans 600 90 0 0 uio_out[1]
+flabel metal4 s 13862 44952 13922 45152 0 FreeSans 750 90 0 0 uio_out[1]
 port 37 nsew
-flabel metal4 s 13310 44952 13370 45152 0 FreeSans 600 90 0 0 uio_out[2]
+flabel metal4 s 13310 44952 13370 45152 0 FreeSans 750 90 0 0 uio_out[2]
 port 38 nsew
-flabel metal4 s 12758 44952 12818 45152 0 FreeSans 600 90 0 0 uio_out[3]
+flabel metal4 s 12758 44952 12818 45152 0 FreeSans 750 90 0 0 uio_out[3]
 port 39 nsew
-flabel metal4 s 12206 44952 12266 45152 0 FreeSans 600 90 0 0 uio_out[4]
+flabel metal4 s 12206 44952 12266 45152 0 FreeSans 750 90 0 0 uio_out[4]
 port 40 nsew
-flabel metal4 s 11654 44952 11714 45152 0 FreeSans 600 90 0 0 uio_out[5]
+flabel metal4 s 11654 44952 11714 45152 0 FreeSans 750 90 0 0 uio_out[5]
 port 41 nsew
-flabel metal4 s 11102 44952 11162 45152 0 FreeSans 600 90 0 0 uio_out[6]
+flabel metal4 s 11102 44952 11162 45152 0 FreeSans 750 90 0 0 uio_out[6]
 port 42 nsew
-flabel metal4 s 10550 44952 10610 45152 0 FreeSans 600 90 0 0 uio_out[7]
+flabel metal4 s 10550 44952 10610 45152 0 FreeSans 750 90 0 0 uio_out[7]
 port 43 nsew
-flabel metal4 s 18830 44952 18890 45152 0 FreeSans 600 90 0 0 uo_out[0]
+flabel metal4 s 18830 44952 18890 45152 0 FreeSans 750 90 0 0 uo_out[0]
 port 44 nsew
-flabel metal4 s 18278 44952 18338 45152 0 FreeSans 600 90 0 0 uo_out[1]
+flabel metal4 s 18278 44952 18338 45152 0 FreeSans 750 90 0 0 uo_out[1]
 port 45 nsew
-flabel metal4 s 17726 44952 17786 45152 0 FreeSans 600 90 0 0 uo_out[2]
+flabel metal4 s 17726 44952 17786 45152 0 FreeSans 750 90 0 0 uo_out[2]
 port 46 nsew
-flabel metal4 s 17174 44952 17234 45152 0 FreeSans 600 90 0 0 uo_out[3]
+flabel metal4 s 17174 44952 17234 45152 0 FreeSans 750 90 0 0 uo_out[3]
 port 47 nsew
-flabel metal4 s 16622 44952 16682 45152 0 FreeSans 600 90 0 0 uo_out[4]
+flabel metal4 s 16622 44952 16682 45152 0 FreeSans 750 90 0 0 uo_out[4]
 port 48 nsew
-flabel metal4 s 16070 44952 16130 45152 0 FreeSans 600 90 0 0 uo_out[5]
+flabel metal4 s 16070 44952 16130 45152 0 FreeSans 750 90 0 0 uo_out[5]
 port 49 nsew
-flabel metal4 s 15518 44952 15578 45152 0 FreeSans 600 90 0 0 uo_out[6]
+flabel metal4 s 15518 44952 15578 45152 0 FreeSans 750 90 0 0 uo_out[6]
 port 50 nsew
-flabel metal4 s 14966 44952 15026 45152 0 FreeSans 600 90 0 0 uo_out[7]
+flabel metal4 s 14966 44952 15026 45152 0 FreeSans 750 90 0 0 uo_out[7]
 port 51 nsew
-flabel metal4 s 200 1000 600 44152 1 FreeSans 500 0 0 0 VDPWR
+flabel metal4 s 200 1000 600 44152 1 FreeSans 625 0 0 0 VDPWR
 port 52 nsew
-flabel metal4 s 800 1000 1200 44152 1 FreeSans 500 0 0 0 VGND
+flabel metal4 s 800 1000 1200 44152 1 FreeSans 625 0 0 0 VGND
 port 53 nsew
+rlabel locali s 23609 6777 23609 6777 4 current_sources_withbulk_0/sky130_fd_pr__pfet_01v8_32X93E_0.D0
+rlabel locali s 24512 6183 24512 6183 4 current_sources_withbulk_0/sky130_fd_pr__pfet_01v8_32X93E_0.G
+rlabel locali s 24254 6183 24254 6183 4 current_sources_withbulk_0/sky130_fd_pr__pfet_01v8_32X93E_0.G
+rlabel locali s 23996 6183 23996 6183 4 current_sources_withbulk_0/sky130_fd_pr__pfet_01v8_32X93E_0.G
+rlabel locali s 23738 6183 23738 6183 4 current_sources_withbulk_0/sky130_fd_pr__pfet_01v8_32X93E_0.G
+rlabel locali s 23867 6777 23867 6777 4 current_sources_withbulk_0/sky130_fd_pr__pfet_01v8_32X93E_0.S1
+rlabel locali s 24125 6777 24125 6777 4 current_sources_withbulk_0/sky130_fd_pr__pfet_01v8_32X93E_0.D2
+rlabel locali s 24383 6777 24383 6777 4 current_sources_withbulk_0/sky130_fd_pr__pfet_01v8_32X93E_0.S3
+rlabel locali s 23867 7965 23867 7965 4 current_sources_withbulk_0/sky130_fd_pr__pfet_01v8_AJHM27_0.D0
+rlabel locali s 23996 8559 23996 8559 4 current_sources_withbulk_0/sky130_fd_pr__pfet_01v8_AJHM27_0.G0
+rlabel locali s 24125 7965 24125 7965 4 current_sources_withbulk_0/sky130_fd_pr__pfet_01v8_AJHM27_0.S1
+rlabel locali s 24254 8559 24254 8559 4 current_sources_withbulk_0/sky130_fd_pr__pfet_01v8_AJHM27_0.G1
+rlabel locali s 24383 7965 24383 7965 4 current_sources_withbulk_0/sky130_fd_pr__pfet_01v8_AJHM27_0.D2
+rlabel locali s 24641 7965 24641 7965 4 current_sources_withbulk_0/sky130_fd_pr__pfet_01v8_AJHM27_0.S2
+rlabel locali s 24512 8559 24512 8559 4 current_sources_withbulk_0/sky130_fd_pr__pfet_01v8_AJHM27_0.G2
+rlabel locali s 25381 6777 25381 6777 4 current_sources_withbulk_0/sky130_fd_pr__pfet_01v8_9KVHJQ_0.D0_0
+rlabel locali s 26284 7371 26284 7371 4 current_sources_withbulk_0/sky130_fd_pr__pfet_01v8_9KVHJQ_0.G
+rlabel locali s 26026 7371 26026 7371 4 current_sources_withbulk_0/sky130_fd_pr__pfet_01v8_9KVHJQ_0.G
+rlabel locali s 25768 7371 25768 7371 4 current_sources_withbulk_0/sky130_fd_pr__pfet_01v8_9KVHJQ_0.G
+rlabel locali s 25510 7371 25510 7371 4 current_sources_withbulk_0/sky130_fd_pr__pfet_01v8_9KVHJQ_0.G
+rlabel locali s 25381 7965 25381 7965 4 current_sources_withbulk_0/sky130_fd_pr__pfet_01v8_9KVHJQ_0.D0_1
+rlabel locali s 25639 6777 25639 6777 4 current_sources_withbulk_0/sky130_fd_pr__pfet_01v8_9KVHJQ_0.S1_0
+rlabel locali s 25639 7965 25639 7965 4 current_sources_withbulk_0/sky130_fd_pr__pfet_01v8_9KVHJQ_0.S1_1
+rlabel locali s 25897 6777 25897 6777 4 current_sources_withbulk_0/sky130_fd_pr__pfet_01v8_9KVHJQ_0.D2_0
+rlabel locali s 25897 7965 25897 7965 4 current_sources_withbulk_0/sky130_fd_pr__pfet_01v8_9KVHJQ_0.D2_1
+rlabel locali s 26155 6777 26155 6777 4 current_sources_withbulk_0/sky130_fd_pr__pfet_01v8_9KVHJQ_0.S3_0
+rlabel locali s 26155 7965 26155 7965 4 current_sources_withbulk_0/sky130_fd_pr__pfet_01v8_9KVHJQ_0.S3_1
+rlabel locali s 25349 4232 25349 4232 4 ota_v3_2_1_current_0/M5_v2.B
+rlabel locali s 24204 4454 24204 4454 4 ota_v3_2_1_current_0/M5_v2.D0_0
+rlabel metal1 s 26265 4574 26265 4574 4 ota_v3_2_1_current_0/M5_v2.G
+rlabel metal1 s 25807 4574 25807 4574 4 ota_v3_2_1_current_0/M5_v2.G
+rlabel metal1 s 25349 4574 25349 4574 4 ota_v3_2_1_current_0/M5_v2.G
+rlabel metal1 s 24891 4574 24891 4574 4 ota_v3_2_1_current_0/M5_v2.G
+rlabel metal1 s 24433 4574 24433 4574 4 ota_v3_2_1_current_0/M5_v2.G
+rlabel locali s 24204 4694 24204 4694 4 ota_v3_2_1_current_0/M5_v2.D0_1
+rlabel locali s 24204 4934 24204 4934 4 ota_v3_2_1_current_0/M5_v2.D0_2
+rlabel locali s 24204 5174 24204 5174 4 ota_v3_2_1_current_0/M5_v2.D0_3
+rlabel locali s 24204 5414 24204 5414 4 ota_v3_2_1_current_0/M5_v2.D0_4
+rlabel locali s 24204 5654 24204 5654 4 ota_v3_2_1_current_0/M5_v2.D0_5
+rlabel locali s 24662 4454 24662 4454 4 ota_v3_2_1_current_0/M5_v2.S1_0
+rlabel locali s 24662 4694 24662 4694 4 ota_v3_2_1_current_0/M5_v2.S1_1
+rlabel locali s 24662 4934 24662 4934 4 ota_v3_2_1_current_0/M5_v2.S1_2
+rlabel locali s 24662 5174 24662 5174 4 ota_v3_2_1_current_0/M5_v2.S1_3
+rlabel locali s 24662 5414 24662 5414 4 ota_v3_2_1_current_0/M5_v2.S1_4
+rlabel locali s 24662 5654 24662 5654 4 ota_v3_2_1_current_0/M5_v2.S1_5
+rlabel locali s 25120 4454 25120 4454 4 ota_v3_2_1_current_0/M5_v2.D2_0
+rlabel locali s 25120 4694 25120 4694 4 ota_v3_2_1_current_0/M5_v2.D2_1
+rlabel locali s 25120 4934 25120 4934 4 ota_v3_2_1_current_0/M5_v2.D2_2
+rlabel locali s 25120 5174 25120 5174 4 ota_v3_2_1_current_0/M5_v2.D2_3
+rlabel locali s 25120 5414 25120 5414 4 ota_v3_2_1_current_0/M5_v2.D2_4
+rlabel locali s 25120 5654 25120 5654 4 ota_v3_2_1_current_0/M5_v2.D2_5
+rlabel locali s 25578 4454 25578 4454 4 ota_v3_2_1_current_0/M5_v2.S3_0
+rlabel locali s 25578 4694 25578 4694 4 ota_v3_2_1_current_0/M5_v2.S3_1
+rlabel locali s 25578 4934 25578 4934 4 ota_v3_2_1_current_0/M5_v2.S3_2
+rlabel locali s 25578 5174 25578 5174 4 ota_v3_2_1_current_0/M5_v2.S3_3
+rlabel locali s 25578 5414 25578 5414 4 ota_v3_2_1_current_0/M5_v2.S3_4
+rlabel locali s 25578 5654 25578 5654 4 ota_v3_2_1_current_0/M5_v2.S3_5
+rlabel locali s 26036 4454 26036 4454 4 ota_v3_2_1_current_0/M5_v2.D4_0
+rlabel locali s 26494 4454 26494 4454 4 ota_v3_2_1_current_0/M5_v2.S4_0
+rlabel locali s 26036 4694 26036 4694 4 ota_v3_2_1_current_0/M5_v2.D4_1
+rlabel locali s 26494 4694 26494 4694 4 ota_v3_2_1_current_0/M5_v2.S4_1
+rlabel locali s 26036 4934 26036 4934 4 ota_v3_2_1_current_0/M5_v2.D4_2
+rlabel locali s 26494 4934 26494 4934 4 ota_v3_2_1_current_0/M5_v2.S4_2
+rlabel locali s 26036 5174 26036 5174 4 ota_v3_2_1_current_0/M5_v2.D4_3
+rlabel locali s 26494 5174 26494 5174 4 ota_v3_2_1_current_0/M5_v2.S4_3
+rlabel locali s 26036 5414 26036 5414 4 ota_v3_2_1_current_0/M5_v2.D4_4
+rlabel locali s 26494 5414 26494 5414 4 ota_v3_2_1_current_0/M5_v2.S4_4
+rlabel locali s 26036 5654 26036 5654 4 ota_v3_2_1_current_0/M5_v2.D4_5
+rlabel locali s 26494 5654 26494 5654 4 ota_v3_2_1_current_0/M5_v2.S4_5
+rlabel locali s 23041 4685 23041 4685 4 ota_v3_2_1_current_0/sky130_fd_pr__nfet_01v8_BTD5D5_0.D0
+rlabel locali s 23499 4685 23499 4685 4 ota_v3_2_1_current_0/sky130_fd_pr__nfet_01v8_BTD5D5_0.S1
+rlabel locali s 23041 5033 23041 5033 4 ota_v3_2_1_current_0/sky130_fd_pr__nfet_01v8_NJGPHB_0.D0
+rlabel metal1 s 23270 4913 23270 4913 4 ota_v3_2_1_current_0/sky130_fd_pr__nfet_01v8_NJGPHB_0.G0
+rlabel locali s 23499 5033 23499 5033 4 ota_v3_2_1_current_0/sky130_fd_pr__nfet_01v8_NJGPHB_0.S1
+rlabel metal1 s 23270 4913 23270 4913 4 ota_v3_2_1_current_0/sky130_fd_pr__nfet_01v8_NJGPHB_0.G1
+rlabel metal1 s 23728 4913 23728 4913 4 ota_v3_2_1_current_0/sky130_fd_pr__nfet_01v8_NJGPHB_0.G1
+rlabel locali s 23041 4337 23041 4337 4 ota_v3_2_1_current_0/sky130_fd_pr__nfet_01v8_YCG9D7_0.D0
+rlabel metal1 s 23270 4457 23270 4457 4 ota_v3_2_1_current_0/sky130_fd_pr__nfet_01v8_YCG9D7_0.G0
+rlabel locali s 23499 4337 23499 4337 4 ota_v3_2_1_current_0/sky130_fd_pr__nfet_01v8_YCG9D7_0.S1
+rlabel metal1 s 23499 5219 23499 5219 4 ota_v3_2_1_current_0/sky130_fd_pr__pfet_01v8_lvt_YE4XRW_0.B
+rlabel metal1 s 23341 5439 23341 5439 4 ota_v3_2_1_current_0/sky130_fd_pr__pfet_01v8_lvt_YE4XRW_0.D0
+rlabel locali s 23420 5628 23420 5628 4 ota_v3_2_1_current_0/sky130_fd_pr__pfet_01v8_lvt_YE4XRW_0.G0
+rlabel locali s 23499 5439 23499 5439 4 ota_v3_2_1_current_0/sky130_fd_pr__pfet_01v8_lvt_YE4XRW_0.S1
+rlabel locali s 23578 5628 23578 5628 4 ota_v3_2_1_current_0/sky130_fd_pr__pfet_01v8_lvt_YE4XRW_0.G1
 rlabel locali s 21209 7553 21209 7553 4 D
 rlabel locali s 23267 7553 23267 7553 4 S
 rlabel locali s 22238 7667 22238 7667 4 G
@@ -32734,6 +32821,21 @@ rlabel locali s 19039 6784 19039 6784 4 R1
 rlabel locali s 19039 2422 19039 2422 4 R2
 rlabel metal4 s 25768 3024 25768 3024 4 C2
 rlabel metal4 s 24378 3024 24378 3024 4 C1
+rlabel locali s 23499 5219 23499 5219 4 B
+rlabel locali s 23341 5439 23341 5439 4 D0
+rlabel locali s 23420 5628 23420 5628 4 G0
+rlabel locali s 23499 5439 23499 5439 4 S1
+rlabel locali s 23578 5628 23578 5628 4 G1
+rlabel locali s 23041 4337 23041 4337 4 D0
+rlabel locali s 23270 4457 23270 4457 4 G0
+rlabel locali s 23499 4337 23499 4337 4 S1
+rlabel locali s 23041 5033 23041 5033 4 D0
+rlabel locali s 23270 4913 23270 4913 4 G0
+rlabel locali s 23499 5033 23499 5033 4 S1
+rlabel locali s 23270 4913 23270 4913 4 G1
+rlabel locali s 23728 4913 23728 4913 4 G1
+rlabel locali s 23041 4685 23041 4685 4 D0
+rlabel locali s 23499 4685 23499 4685 4 S1
 rlabel locali s 25349 4232 25349 4232 4 B
 rlabel locali s 24204 4454 24204 4454 4 D0_0
 rlabel locali s 26265 4574 26265 4574 4 G
@@ -32776,36 +32878,6 @@ rlabel locali s 26036 5414 26036 5414 4 D4_4
 rlabel locali s 26494 5414 26494 5414 4 S4_4
 rlabel locali s 26036 5654 26036 5654 4 D4_5
 rlabel locali s 26494 5654 26494 5654 4 S4_5
-rlabel locali s 23041 4685 23041 4685 4 D0
-rlabel locali s 23499 4685 23499 4685 4 S1
-rlabel locali s 23041 5033 23041 5033 4 D0
-rlabel locali s 23270 4913 23270 4913 4 G0
-rlabel locali s 23499 5033 23499 5033 4 S1
-rlabel locali s 23270 4913 23270 4913 4 G1
-rlabel locali s 23728 4913 23728 4913 4 G1
-rlabel locali s 23041 4337 23041 4337 4 D0
-rlabel locali s 23270 4457 23270 4457 4 G0
-rlabel locali s 23499 4337 23499 4337 4 S1
-rlabel locali s 23499 5219 23499 5219 4 B
-rlabel locali s 23341 5439 23341 5439 4 D0
-rlabel locali s 23420 5628 23420 5628 4 G0
-rlabel locali s 23499 5439 23499 5439 4 S1
-rlabel locali s 23578 5628 23578 5628 4 G1
-rlabel locali s 23609 6777 23609 6777 4 D0
-rlabel locali s 24512 6183 24512 6183 4 G
-rlabel locali s 24254 6183 24254 6183 4 G
-rlabel locali s 23996 6183 23996 6183 4 G
-rlabel locali s 23738 6183 23738 6183 4 G
-rlabel locali s 23867 6777 23867 6777 4 S1
-rlabel locali s 24125 6777 24125 6777 4 D2
-rlabel locali s 24383 6777 24383 6777 4 S3
-rlabel locali s 23867 7965 23867 7965 4 D0
-rlabel locali s 23996 8559 23996 8559 4 G0
-rlabel locali s 24125 7965 24125 7965 4 S1
-rlabel locali s 24254 8559 24254 8559 4 G1
-rlabel locali s 24383 7965 24383 7965 4 D2
-rlabel locali s 24641 7965 24641 7965 4 S2
-rlabel locali s 24512 8559 24512 8559 4 G2
 rlabel locali s 25381 6777 25381 6777 4 D0_0
 rlabel locali s 26284 7371 26284 7371 4 G
 rlabel locali s 26026 7371 26026 7371 4 G
@@ -32818,6 +32890,21 @@ rlabel locali s 25897 6777 25897 6777 4 D2_0
 rlabel locali s 25897 7965 25897 7965 4 D2_1
 rlabel locali s 26155 6777 26155 6777 4 S3_0
 rlabel locali s 26155 7965 26155 7965 4 S3_1
+rlabel locali s 23867 7965 23867 7965 4 D0
+rlabel locali s 23996 8559 23996 8559 4 G0
+rlabel locali s 24125 7965 24125 7965 4 S1
+rlabel locali s 24254 8559 24254 8559 4 G1
+rlabel locali s 24383 7965 24383 7965 4 D2
+rlabel locali s 24641 7965 24641 7965 4 S2
+rlabel locali s 24512 8559 24512 8559 4 G2
+rlabel locali s 23609 6777 23609 6777 4 D0
+rlabel locali s 24512 6183 24512 6183 4 G
+rlabel locali s 24254 6183 24254 6183 4 G
+rlabel locali s 23996 6183 23996 6183 4 G
+rlabel locali s 23738 6183 23738 6183 4 G
+rlabel locali s 23867 6777 23867 6777 4 S1
+rlabel locali s 24125 6777 24125 6777 4 D2
+rlabel locali s 24383 6777 24383 6777 4 S3
 rlabel locali s 22531 4833 22531 4833 4 D0
 rlabel locali s 22789 4833 22789 4833 4 S0
 rlabel locali s 22660 5388 22660 5388 4 G
@@ -32836,116 +32923,194 @@ rlabel locali s 22929 6990 22929 6990 4 S
 rlabel locali s 22800 7245 22800 7245 4 G
 rlabel locali s 22460 6890 22460 6890 4 D
 rlabel locali s 22548 6890 22548 6890 4 S
-rlabel ndiffc 7004 6890 7004 6890 4 sky130_fd_pr__nfet_01v8_VUE4HL_1.D
-rlabel ndiffc 7092 6890 7092 6890 4 sky130_fd_pr__nfet_01v8_VUE4HL_1.S
-rlabel locali 7075 4833 7075 4833 4 sky130_fd_pr__nfet_01v8_ES745V_2.D0
-rlabel locali 7333 4833 7333 4833 4 sky130_fd_pr__nfet_01v8_ES745V_2.S0
-rlabel locali 7204 5388 7204 5388 4 sky130_fd_pr__nfet_01v8_ES745V_2.G
-rlabel locali 7075 5943 7075 5943 4 sky130_fd_pr__nfet_01v8_ES745V_2.D1
-rlabel locali 7333 5943 7333 5943 4 sky130_fd_pr__nfet_01v8_ES745V_2.S1
-rlabel viali 7215 6990 7215 6990 4 sky130_fd_pr__nfet_01v8_S5TDRT_1.D
-rlabel viali 7473 6990 7473 6990 4 sky130_fd_pr__nfet_01v8_S5TDRT_1.S
-rlabel locali 7344 7245 7344 7245 4 sky130_fd_pr__nfet_01v8_S5TDRT_1.G
-rlabel pdiffc 8153 6777 8153 6777 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_32X93E_0.D0
-rlabel locali 9056 6183 9056 6183 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_32X93E_0.G
-rlabel locali 8798 6183 8798 6183 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_32X93E_0.G
-rlabel locali 8540 6183 8540 6183 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_32X93E_0.G
-rlabel locali 8282 6183 8282 6183 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_32X93E_0.G
-rlabel pdiffc 8411 6777 8411 6777 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_32X93E_0.S1
-rlabel pdiffc 8669 6777 8669 6777 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_32X93E_0.D2
-rlabel pdiffc 8927 6777 8927 6777 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_32X93E_0.S3
-rlabel pdiffc 8411 7965 8411 7965 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_AJHM27_0.D0
-rlabel locali 8540 8559 8540 8559 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_AJHM27_0.G0
-rlabel pdiffc 8669 7965 8669 7965 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_AJHM27_0.S1
-rlabel locali 8798 8559 8798 8559 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_AJHM27_0.G1
-rlabel pdiffc 8927 7965 8927 7965 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_AJHM27_0.D2
-rlabel pdiffc 9185 7965 9185 7965 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_AJHM27_0.S2
-rlabel locali 9056 8559 9056 8559 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_AJHM27_0.G2
-rlabel pdiffc 9925 6777 9925 6777 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_9KVHJQ_0.D0_0
-rlabel locali 10828 7371 10828 7371 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_9KVHJQ_0.G
-rlabel locali 10570 7371 10570 7371 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_9KVHJQ_0.G
-rlabel locali 10312 7371 10312 7371 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_9KVHJQ_0.G
-rlabel locali 10054 7371 10054 7371 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_9KVHJQ_0.G
-rlabel pdiffc 9925 7965 9925 7965 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_9KVHJQ_0.D0_1
-rlabel pdiffc 10183 6777 10183 6777 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_9KVHJQ_0.S1_0
-rlabel pdiffc 10183 7965 10183 7965 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_9KVHJQ_0.S1_1
-rlabel pdiffc 10441 6777 10441 6777 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_9KVHJQ_0.D2_0
-rlabel pdiffc 10441 7965 10441 7965 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_9KVHJQ_0.D2_1
-rlabel pdiffc 10699 6777 10699 6777 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_9KVHJQ_0.S3_0
-rlabel pdiffc 10699 7965 10699 7965 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_9KVHJQ_0.S3_1
-rlabel psubdiffcont 9893 4232 9893 4232 4 ota_v3_2_1_current_1/M5_v2.B
-rlabel locali 8748 4454 8748 4454 4 ota_v3_2_1_current_1/M5_v2.D0_0
-rlabel viali 10809 4574 10809 4574 4 ota_v3_2_1_current_1/M5_v2.G
-rlabel viali 10351 4574 10351 4574 4 ota_v3_2_1_current_1/M5_v2.G
-rlabel viali 9893 4574 9893 4574 4 ota_v3_2_1_current_1/M5_v2.G
-rlabel viali 9435 4574 9435 4574 4 ota_v3_2_1_current_1/M5_v2.G
-rlabel viali 8977 4574 8977 4574 4 ota_v3_2_1_current_1/M5_v2.G
-rlabel locali 8748 4694 8748 4694 4 ota_v3_2_1_current_1/M5_v2.D0_1
-rlabel locali 8748 4934 8748 4934 4 ota_v3_2_1_current_1/M5_v2.D0_2
-rlabel locali 8748 5174 8748 5174 4 ota_v3_2_1_current_1/M5_v2.D0_3
-rlabel locali 8748 5414 8748 5414 4 ota_v3_2_1_current_1/M5_v2.D0_4
-rlabel locali 8748 5654 8748 5654 4 ota_v3_2_1_current_1/M5_v2.D0_5
-rlabel locali 9206 4454 9206 4454 4 ota_v3_2_1_current_1/M5_v2.S1_0
-rlabel locali 9206 4694 9206 4694 4 ota_v3_2_1_current_1/M5_v2.S1_1
-rlabel locali 9206 4934 9206 4934 4 ota_v3_2_1_current_1/M5_v2.S1_2
-rlabel locali 9206 5174 9206 5174 4 ota_v3_2_1_current_1/M5_v2.S1_3
-rlabel locali 9206 5414 9206 5414 4 ota_v3_2_1_current_1/M5_v2.S1_4
-rlabel locali 9206 5654 9206 5654 4 ota_v3_2_1_current_1/M5_v2.S1_5
-rlabel locali 9664 4454 9664 4454 4 ota_v3_2_1_current_1/M5_v2.D2_0
-rlabel locali 9664 4694 9664 4694 4 ota_v3_2_1_current_1/M5_v2.D2_1
-rlabel locali 9664 4934 9664 4934 4 ota_v3_2_1_current_1/M5_v2.D2_2
-rlabel locali 9664 5174 9664 5174 4 ota_v3_2_1_current_1/M5_v2.D2_3
-rlabel locali 9664 5414 9664 5414 4 ota_v3_2_1_current_1/M5_v2.D2_4
-rlabel locali 9664 5654 9664 5654 4 ota_v3_2_1_current_1/M5_v2.D2_5
-rlabel locali 10122 4454 10122 4454 4 ota_v3_2_1_current_1/M5_v2.S3_0
-rlabel locali 10122 4694 10122 4694 4 ota_v3_2_1_current_1/M5_v2.S3_1
-rlabel locali 10122 4934 10122 4934 4 ota_v3_2_1_current_1/M5_v2.S3_2
-rlabel locali 10122 5174 10122 5174 4 ota_v3_2_1_current_1/M5_v2.S3_3
-rlabel locali 10122 5414 10122 5414 4 ota_v3_2_1_current_1/M5_v2.S3_4
-rlabel locali 10122 5654 10122 5654 4 ota_v3_2_1_current_1/M5_v2.S3_5
-rlabel locali 10580 4454 10580 4454 4 ota_v3_2_1_current_1/M5_v2.D4_0
-rlabel locali 11038 4454 11038 4454 4 ota_v3_2_1_current_1/M5_v2.S4_0
-rlabel locali 10580 4694 10580 4694 4 ota_v3_2_1_current_1/M5_v2.D4_1
-rlabel locali 11038 4694 11038 4694 4 ota_v3_2_1_current_1/M5_v2.S4_1
-rlabel locali 10580 4934 10580 4934 4 ota_v3_2_1_current_1/M5_v2.D4_2
-rlabel locali 11038 4934 11038 4934 4 ota_v3_2_1_current_1/M5_v2.S4_2
-rlabel locali 10580 5174 10580 5174 4 ota_v3_2_1_current_1/M5_v2.D4_3
-rlabel locali 11038 5174 11038 5174 4 ota_v3_2_1_current_1/M5_v2.S4_3
-rlabel locali 10580 5414 10580 5414 4 ota_v3_2_1_current_1/M5_v2.D4_4
-rlabel locali 11038 5414 11038 5414 4 ota_v3_2_1_current_1/M5_v2.S4_4
-rlabel locali 10580 5654 10580 5654 4 ota_v3_2_1_current_1/M5_v2.D4_5
-rlabel locali 11038 5654 11038 5654 4 ota_v3_2_1_current_1/M5_v2.S4_5
-rlabel locali 7585 4685 7585 4685 4 ota_v3_2_1_current_1/sky130_fd_pr__nfet_01v8_BTD5D5_0.D0
-rlabel locali 8043 4685 8043 4685 4 ota_v3_2_1_current_1/sky130_fd_pr__nfet_01v8_BTD5D5_0.S1
-rlabel locali 7585 5033 7585 5033 4 ota_v3_2_1_current_1/sky130_fd_pr__nfet_01v8_NJGPHB_0.D0
-rlabel viali 7814 4913 7814 4913 4 ota_v3_2_1_current_1/sky130_fd_pr__nfet_01v8_NJGPHB_0.G0
-rlabel locali 8043 5033 8043 5033 4 ota_v3_2_1_current_1/sky130_fd_pr__nfet_01v8_NJGPHB_0.S1
-rlabel viali 7814 4913 7814 4913 4 ota_v3_2_1_current_1/sky130_fd_pr__nfet_01v8_NJGPHB_0.G1
-rlabel viali 8272 4913 8272 4913 4 ota_v3_2_1_current_1/sky130_fd_pr__nfet_01v8_NJGPHB_0.G1
-rlabel locali 7585 4337 7585 4337 4 ota_v3_2_1_current_1/sky130_fd_pr__nfet_01v8_YCG9D7_0.D0
-rlabel viali 7814 4457 7814 4457 4 ota_v3_2_1_current_1/sky130_fd_pr__nfet_01v8_YCG9D7_0.G0
-rlabel locali 8043 4337 8043 4337 4 ota_v3_2_1_current_1/sky130_fd_pr__nfet_01v8_YCG9D7_0.S1
-rlabel viali 8043 5219 8043 5219 4 ota_v3_2_1_current_1/sky130_fd_pr__pfet_01v8_lvt_YE4XRW_0.B
-rlabel viali 7885 5439 7885 5439 4 ota_v3_2_1_current_1/sky130_fd_pr__pfet_01v8_lvt_YE4XRW_0.D0
-rlabel polycont 7964 5628 7964 5628 4 ota_v3_2_1_current_1/sky130_fd_pr__pfet_01v8_lvt_YE4XRW_0.G0
-rlabel pdiffc 8043 5439 8043 5439 4 ota_v3_2_1_current_1/sky130_fd_pr__pfet_01v8_lvt_YE4XRW_0.S1
-rlabel polycont 8122 5628 8122 5628 4 ota_v3_2_1_current_1/sky130_fd_pr__pfet_01v8_lvt_YE4XRW_0.G1
-rlabel metal4 10312 3024 10312 3024 4 sky130_fd_pr__cap_mim_m3_1_K4L3LX_1.C2
-rlabel mimcapcontact 8922 3024 8922 3024 4 sky130_fd_pr__cap_mim_m3_1_K4L3LX_1.C1
-rlabel viali 5753 7553 5753 7553 4 sky130_fd_pr__pfet_01v8_SDNS9K_1.D
-rlabel viali 7811 7553 7811 7553 4 sky130_fd_pr__pfet_01v8_SDNS9K_1.S
-rlabel viali 6782 7667 6782 7667 4 sky130_fd_pr__pfet_01v8_SDNS9K_1.G
-rlabel locali 6705 4833 6705 4833 4 sky130_fd_pr__nfet_01v8_V5JU8A_1.D
-rlabel locali 6963 4833 6963 4833 4 sky130_fd_pr__nfet_01v8_V5JU8A_1.S
-rlabel locali 6834 5388 6834 5388 4 sky130_fd_pr__nfet_01v8_V5JU8A_1.G
-rlabel locali 6335 4833 6335 4833 4 sky130_fd_pr__nfet_01v8_ES745V_3.D0
-rlabel locali 6593 4833 6593 4833 4 sky130_fd_pr__nfet_01v8_ES745V_3.S0
-rlabel locali 6464 5388 6464 5388 4 sky130_fd_pr__nfet_01v8_ES745V_3.G
-rlabel locali 6335 5943 6335 5943 4 sky130_fd_pr__nfet_01v8_ES745V_3.D1
-rlabel locali 6593 5943 6593 5943 4 sky130_fd_pr__nfet_01v8_ES745V_3.S1
-rlabel psubdiffcont 3583 2274 3583 2274 4 sky130_fd_pr__res_xhigh_po_2p85_V7QCW3_1.B
-rlabel viali 3583 6784 3583 6784 4 sky130_fd_pr__res_xhigh_po_2p85_V7QCW3_1.R1
-rlabel viali 3583 2422 3583 2422 4 sky130_fd_pr__res_xhigh_po_2p85_V7QCW3_1.R2
+rlabel locali s 8153 6777 8153 6777 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_32X93E_0.D0
+rlabel locali s 9056 6183 9056 6183 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_32X93E_0.G
+rlabel locali s 8798 6183 8798 6183 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_32X93E_0.G
+rlabel locali s 8540 6183 8540 6183 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_32X93E_0.G
+rlabel locali s 8282 6183 8282 6183 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_32X93E_0.G
+rlabel locali s 8411 6777 8411 6777 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_32X93E_0.S1
+rlabel locali s 8669 6777 8669 6777 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_32X93E_0.D2
+rlabel locali s 8927 6777 8927 6777 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_32X93E_0.S3
+rlabel locali s 8411 7965 8411 7965 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_AJHM27_0.D0
+rlabel locali s 8669 7965 8669 7965 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_AJHM27_0.S1
+rlabel locali s 8927 7965 8927 7965 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_AJHM27_0.D2
+rlabel locali s 9185 7965 9185 7965 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_AJHM27_0.S2
+rlabel locali s 9925 6777 9925 6777 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_9KVHJQ_0.D0_0
+rlabel locali s 10828 7371 10828 7371 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_9KVHJQ_0.G
+rlabel locali s 10570 7371 10570 7371 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_9KVHJQ_0.G
+rlabel locali s 10312 7371 10312 7371 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_9KVHJQ_0.G
+rlabel locali s 10054 7371 10054 7371 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_9KVHJQ_0.G
+rlabel locali s 9925 7965 9925 7965 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_9KVHJQ_0.D0_1
+rlabel locali s 10183 6777 10183 6777 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_9KVHJQ_0.S1_0
+rlabel locali s 10183 7965 10183 7965 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_9KVHJQ_0.S1_1
+rlabel locali s 10441 6777 10441 6777 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_9KVHJQ_0.D2_0
+rlabel locali s 10441 7965 10441 7965 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_9KVHJQ_0.D2_1
+rlabel locali s 10699 6777 10699 6777 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_9KVHJQ_0.S3_0
+rlabel locali s 10699 7965 10699 7965 4 current_sources_withbulk_1/sky130_fd_pr__pfet_01v8_9KVHJQ_0.S3_1
+rlabel locali s 9893 4232 9893 4232 4 ota_v3_2_1_current_1/M5_v2.B
+rlabel locali s 8748 4454 8748 4454 4 ota_v3_2_1_current_1/M5_v2.D0_0
+rlabel metal1 s 10809 4574 10809 4574 4 ota_v3_2_1_current_1/M5_v2.G
+rlabel metal1 s 10351 4574 10351 4574 4 ota_v3_2_1_current_1/M5_v2.G
+rlabel metal1 s 9893 4574 9893 4574 4 ota_v3_2_1_current_1/M5_v2.G
+rlabel metal1 s 9435 4574 9435 4574 4 ota_v3_2_1_current_1/M5_v2.G
+rlabel metal1 s 8977 4574 8977 4574 4 ota_v3_2_1_current_1/M5_v2.G
+rlabel locali s 8748 4694 8748 4694 4 ota_v3_2_1_current_1/M5_v2.D0_1
+rlabel locali s 8748 4934 8748 4934 4 ota_v3_2_1_current_1/M5_v2.D0_2
+rlabel locali s 8748 5174 8748 5174 4 ota_v3_2_1_current_1/M5_v2.D0_3
+rlabel locali s 8748 5414 8748 5414 4 ota_v3_2_1_current_1/M5_v2.D0_4
+rlabel locali s 8748 5654 8748 5654 4 ota_v3_2_1_current_1/M5_v2.D0_5
+rlabel locali s 9206 4454 9206 4454 4 ota_v3_2_1_current_1/M5_v2.S1_0
+rlabel locali s 9206 4694 9206 4694 4 ota_v3_2_1_current_1/M5_v2.S1_1
+rlabel locali s 9206 4934 9206 4934 4 ota_v3_2_1_current_1/M5_v2.S1_2
+rlabel locali s 9206 5174 9206 5174 4 ota_v3_2_1_current_1/M5_v2.S1_3
+rlabel locali s 9206 5414 9206 5414 4 ota_v3_2_1_current_1/M5_v2.S1_4
+rlabel locali s 9206 5654 9206 5654 4 ota_v3_2_1_current_1/M5_v2.S1_5
+rlabel locali s 9664 4454 9664 4454 4 ota_v3_2_1_current_1/M5_v2.D2_0
+rlabel locali s 9664 4694 9664 4694 4 ota_v3_2_1_current_1/M5_v2.D2_1
+rlabel locali s 9664 4934 9664 4934 4 ota_v3_2_1_current_1/M5_v2.D2_2
+rlabel locali s 9664 5174 9664 5174 4 ota_v3_2_1_current_1/M5_v2.D2_3
+rlabel locali s 9664 5414 9664 5414 4 ota_v3_2_1_current_1/M5_v2.D2_4
+rlabel locali s 9664 5654 9664 5654 4 ota_v3_2_1_current_1/M5_v2.D2_5
+rlabel locali s 10122 4454 10122 4454 4 ota_v3_2_1_current_1/M5_v2.S3_0
+rlabel locali s 10122 4694 10122 4694 4 ota_v3_2_1_current_1/M5_v2.S3_1
+rlabel locali s 10122 4934 10122 4934 4 ota_v3_2_1_current_1/M5_v2.S3_2
+rlabel locali s 10122 5174 10122 5174 4 ota_v3_2_1_current_1/M5_v2.S3_3
+rlabel locali s 10122 5414 10122 5414 4 ota_v3_2_1_current_1/M5_v2.S3_4
+rlabel locali s 10122 5654 10122 5654 4 ota_v3_2_1_current_1/M5_v2.S3_5
+rlabel locali s 10580 4454 10580 4454 4 ota_v3_2_1_current_1/M5_v2.D4_0
+rlabel locali s 11038 4454 11038 4454 4 ota_v3_2_1_current_1/M5_v2.S4_0
+rlabel locali s 10580 4694 10580 4694 4 ota_v3_2_1_current_1/M5_v2.D4_1
+rlabel locali s 11038 4694 11038 4694 4 ota_v3_2_1_current_1/M5_v2.S4_1
+rlabel locali s 10580 4934 10580 4934 4 ota_v3_2_1_current_1/M5_v2.D4_2
+rlabel locali s 11038 4934 11038 4934 4 ota_v3_2_1_current_1/M5_v2.S4_2
+rlabel locali s 10580 5174 10580 5174 4 ota_v3_2_1_current_1/M5_v2.D4_3
+rlabel locali s 11038 5174 11038 5174 4 ota_v3_2_1_current_1/M5_v2.S4_3
+rlabel locali s 10580 5414 10580 5414 4 ota_v3_2_1_current_1/M5_v2.D4_4
+rlabel locali s 11038 5414 11038 5414 4 ota_v3_2_1_current_1/M5_v2.S4_4
+rlabel locali s 10580 5654 10580 5654 4 ota_v3_2_1_current_1/M5_v2.D4_5
+rlabel locali s 11038 5654 11038 5654 4 ota_v3_2_1_current_1/M5_v2.S4_5
+rlabel locali s 7585 4685 7585 4685 4 ota_v3_2_1_current_1/sky130_fd_pr__nfet_01v8_BTD5D5_0.D0
+rlabel locali s 8043 4685 8043 4685 4 ota_v3_2_1_current_1/sky130_fd_pr__nfet_01v8_BTD5D5_0.S1
+rlabel locali s 7585 5033 7585 5033 4 ota_v3_2_1_current_1/sky130_fd_pr__nfet_01v8_NJGPHB_0.D0
+rlabel metal1 s 7814 4913 7814 4913 4 ota_v3_2_1_current_1/sky130_fd_pr__nfet_01v8_NJGPHB_0.G0
+rlabel locali s 8043 5033 8043 5033 4 ota_v3_2_1_current_1/sky130_fd_pr__nfet_01v8_NJGPHB_0.S1
+rlabel metal1 s 7814 4913 7814 4913 4 ota_v3_2_1_current_1/sky130_fd_pr__nfet_01v8_NJGPHB_0.G1
+rlabel metal1 s 8272 4913 8272 4913 4 ota_v3_2_1_current_1/sky130_fd_pr__nfet_01v8_NJGPHB_0.G1
+rlabel locali s 7585 4337 7585 4337 4 ota_v3_2_1_current_1/sky130_fd_pr__nfet_01v8_YCG9D7_0.D0
+rlabel metal1 s 7814 4457 7814 4457 4 ota_v3_2_1_current_1/sky130_fd_pr__nfet_01v8_YCG9D7_0.G0
+rlabel locali s 8043 4337 8043 4337 4 ota_v3_2_1_current_1/sky130_fd_pr__nfet_01v8_YCG9D7_0.S1
+rlabel metal1 s 8043 5219 8043 5219 4 ota_v3_2_1_current_1/sky130_fd_pr__pfet_01v8_lvt_YE4XRW_0.B
+rlabel metal1 s 7885 5439 7885 5439 4 ota_v3_2_1_current_1/sky130_fd_pr__pfet_01v8_lvt_YE4XRW_0.D0
+rlabel locali s 7964 5628 7964 5628 4 ota_v3_2_1_current_1/sky130_fd_pr__pfet_01v8_lvt_YE4XRW_0.G0
+rlabel locali s 8043 5439 8043 5439 4 ota_v3_2_1_current_1/sky130_fd_pr__pfet_01v8_lvt_YE4XRW_0.S1
+rlabel locali s 8122 5628 8122 5628 4 ota_v3_2_1_current_1/sky130_fd_pr__pfet_01v8_lvt_YE4XRW_0.G1
+rlabel locali s 3583 2274 3583 2274 4 B
+rlabel locali s 3583 6784 3583 6784 4 R1
+rlabel locali s 3583 2422 3583 2422 4 R2
+rlabel locali s 6335 4833 6335 4833 4 D0
+rlabel locali s 6593 4833 6593 4833 4 S0
+rlabel locali s 6464 5388 6464 5388 4 G
+rlabel locali s 6335 5943 6335 5943 4 D1
+rlabel locali s 6593 5943 6593 5943 4 S1
+rlabel locali s 6705 4833 6705 4833 4 D
+rlabel locali s 6963 4833 6963 4833 4 S
+rlabel locali s 6834 5388 6834 5388 4 G
+rlabel locali s 5753 7553 5753 7553 4 D
+rlabel locali s 7811 7553 7811 7553 4 S
+rlabel locali s 6782 7667 6782 7667 4 G
+rlabel metal4 s 10312 3024 10312 3024 4 C2
+rlabel metal4 s 8922 3024 8922 3024 4 C1
+rlabel locali s 8043 5219 8043 5219 4 B
+rlabel locali s 7885 5439 7885 5439 4 D0
+rlabel locali s 7964 5628 7964 5628 4 G0
+rlabel locali s 8043 5439 8043 5439 4 S1
+rlabel locali s 8122 5628 8122 5628 4 G1
+rlabel locali s 7585 4337 7585 4337 4 D0
+rlabel locali s 7814 4457 7814 4457 4 G0
+rlabel locali s 8043 4337 8043 4337 4 S1
+rlabel locali s 7585 5033 7585 5033 4 D0
+rlabel locali s 7814 4913 7814 4913 4 G0
+rlabel locali s 8043 5033 8043 5033 4 S1
+rlabel locali s 7814 4913 7814 4913 4 G1
+rlabel locali s 8272 4913 8272 4913 4 G1
+rlabel locali s 7585 4685 7585 4685 4 D0
+rlabel locali s 8043 4685 8043 4685 4 S1
+rlabel locali s 9893 4232 9893 4232 4 B
+rlabel locali s 8748 4454 8748 4454 4 D0_0
+rlabel locali s 10809 4574 10809 4574 4 G
+rlabel locali s 10351 4574 10351 4574 4 G
+rlabel locali s 9893 4574 9893 4574 4 G
+rlabel locali s 9435 4574 9435 4574 4 G
+rlabel locali s 8977 4574 8977 4574 4 G
+rlabel locali s 8748 4694 8748 4694 4 D0_1
+rlabel locali s 8748 4934 8748 4934 4 D0_2
+rlabel locali s 8748 5174 8748 5174 4 D0_3
+rlabel locali s 8748 5414 8748 5414 4 D0_4
+rlabel locali s 8748 5654 8748 5654 4 D0_5
+rlabel locali s 9206 4454 9206 4454 4 S1_0
+rlabel locali s 9206 4694 9206 4694 4 S1_1
+rlabel locali s 9206 4934 9206 4934 4 S1_2
+rlabel locali s 9206 5174 9206 5174 4 S1_3
+rlabel locali s 9206 5414 9206 5414 4 S1_4
+rlabel locali s 9206 5654 9206 5654 4 S1_5
+rlabel locali s 9664 4454 9664 4454 4 D2_0
+rlabel locali s 9664 4694 9664 4694 4 D2_1
+rlabel locali s 9664 4934 9664 4934 4 D2_2
+rlabel locali s 9664 5174 9664 5174 4 D2_3
+rlabel locali s 9664 5414 9664 5414 4 D2_4
+rlabel locali s 9664 5654 9664 5654 4 D2_5
+rlabel locali s 10122 4454 10122 4454 4 S3_0
+rlabel locali s 10122 4694 10122 4694 4 S3_1
+rlabel locali s 10122 4934 10122 4934 4 S3_2
+rlabel locali s 10122 5174 10122 5174 4 S3_3
+rlabel locali s 10122 5414 10122 5414 4 S3_4
+rlabel locali s 10122 5654 10122 5654 4 S3_5
+rlabel locali s 10580 4454 10580 4454 4 D4_0
+rlabel locali s 11038 4454 11038 4454 4 S4_0
+rlabel locali s 10580 4694 10580 4694 4 D4_1
+rlabel locali s 11038 4694 11038 4694 4 S4_1
+rlabel locali s 10580 4934 10580 4934 4 D4_2
+rlabel locali s 11038 4934 11038 4934 4 S4_2
+rlabel locali s 10580 5174 10580 5174 4 D4_3
+rlabel locali s 11038 5174 11038 5174 4 S4_3
+rlabel locali s 10580 5414 10580 5414 4 D4_4
+rlabel locali s 11038 5414 11038 5414 4 S4_4
+rlabel locali s 10580 5654 10580 5654 4 D4_5
+rlabel locali s 11038 5654 11038 5654 4 S4_5
+rlabel locali s 9925 6777 9925 6777 4 D0_0
+rlabel locali s 10828 7371 10828 7371 4 G
+rlabel locali s 10570 7371 10570 7371 4 G
+rlabel locali s 10312 7371 10312 7371 4 G
+rlabel locali s 10054 7371 10054 7371 4 G
+rlabel locali s 9925 7965 9925 7965 4 D0_1
+rlabel locali s 10183 6777 10183 6777 4 S1_0
+rlabel locali s 10183 7965 10183 7965 4 S1_1
+rlabel locali s 10441 6777 10441 6777 4 D2_0
+rlabel locali s 10441 7965 10441 7965 4 D2_1
+rlabel locali s 10699 6777 10699 6777 4 S3_0
+rlabel locali s 10699 7965 10699 7965 4 S3_1
+rlabel locali s 8411 7965 8411 7965 4 D0
+rlabel locali s 8669 7965 8669 7965 4 S1
+rlabel locali s 8927 7965 8927 7965 4 D2
+rlabel locali s 9185 7965 9185 7965 4 S2
+rlabel locali s 8153 6777 8153 6777 4 D0
+rlabel locali s 9056 6183 9056 6183 4 G
+rlabel locali s 8798 6183 8798 6183 4 G
+rlabel locali s 8540 6183 8540 6183 4 G
+rlabel locali s 8282 6183 8282 6183 4 G
+rlabel locali s 8411 6777 8411 6777 4 S1
+rlabel locali s 8669 6777 8669 6777 4 D2
+rlabel locali s 8927 6777 8927 6777 4 S3
+rlabel locali s 7215 6990 7215 6990 4 D
+rlabel locali s 7473 6990 7473 6990 4 S
+rlabel locali s 7344 7245 7344 7245 4 G
+rlabel locali s 7075 4833 7075 4833 4 D0
+rlabel locali s 7333 4833 7333 4833 4 S0
+rlabel locali s 7204 5388 7204 5388 4 G
+rlabel locali s 7075 5943 7075 5943 4 D1
+rlabel locali s 7333 5943 7333 5943 4 S1
+rlabel locali s 7004 6890 7004 6890 4 D
+rlabel locali s 7092 6890 7092 6890 4 S
 << properties >>
 string FIXED_BBOX 0 0 32200 45152
 << end >>
