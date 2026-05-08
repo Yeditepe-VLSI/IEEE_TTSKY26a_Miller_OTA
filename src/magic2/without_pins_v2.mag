@@ -1,9 +1,9 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1778249935
+timestamp 1778251282
 use without_pins  without_pins_0
-timestamp 1778249803
+timestamp 1778251282
 transform 1 0 -4900 0 1 9738
 box 604 200 30554 10673
 << end >>
