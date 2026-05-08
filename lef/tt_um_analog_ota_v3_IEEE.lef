@@ -610,7 +610,8 @@ MACRO tt_um_analog_ota_v3_IEEE
     END
   END uo_out[7]
   PIN VDPWR
-    ANTENNADIFFAREA 68.675995 ;
+    DIRECTION INOUT ;
+    USE POWER ;
     PORT
       LAYER nwell ;
         RECT 39.865 39.080 55.695 43.570 ;
