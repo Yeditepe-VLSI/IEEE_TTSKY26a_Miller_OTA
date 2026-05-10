@@ -16,6 +16,7 @@ Run it from the terminal:
 
 ```bash
 cd test/drc
+git clone https://github.com/efabless/mpw_precheck
 ./run.sh
 ```
 

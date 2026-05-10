@@ -15,3 +15,4 @@ test/gate_level_netlist.v
 *.sim
 test/postlayout_sim/work/
 test/drc/drc_reports/
+test/drc/mpw_precheck/
