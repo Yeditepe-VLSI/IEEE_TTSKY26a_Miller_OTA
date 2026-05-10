@@ -1,8 +1,6 @@
-** sch_path: /home/tarator/Desktop/IEEE_TTSKY26a_Miller_OTA/src/xschem/miller_ota.sch
-**.subckt miller_ota VDPWR out inn inp VGND
-*.ipin inp
-*.opin out
-*.ipin inn
+.subckt miller_ota VDPWR ua[1] ua[0] VGND
+*.ipin ua[0]
+*.opin ua[1]
 *.iopin VDPWR
 *.iopin VGND
 XMs1 net1 net1 VDPWR VDPWR sky130_fd_pr__pfet_01v8 L=10 W=0.5 nf=1 ad=0.145 as=0.145 pd=1.58 ps=1.58 nrd=0.58 nrs=0.58 sa=0 sb=0
@@ -24,9 +22,9 @@ XM4 net5 net4 VGND VGND sky130_fd_pr__nfet_01v8 L=2 W=0.65 nf=1 ad=0.1885 as=0.1
 + nrs=0.446153846153846 sa=0 sb=0 sd=0 mult=1
 XM3 net4 net4 VGND VGND sky130_fd_pr__nfet_01v8 L=2 W=0.65 nf=1 ad=0.1885 as=0.1885 pd=1.88 ps=1.88 nrd=0.446153846153846
 + nrs=0.446153846153846 sa=0 sb=0 sd=0 mult=1
-XM1 net4 inn net6 net6 sky130_fd_pr__pfet_01v8_lvt L=0.5 W=1.25 nf=1 ad=0.3625 as=0.3625 pd=3.08 ps=3.08 nrd=0.232 nrs=0.232 sa=0
+XM1 net4 ua[1] net6 net6 sky130_fd_pr__pfet_01v8_lvt L=0.5 W=1.25 nf=1 ad=0.3625 as=0.3625 pd=3.08 ps=3.08 nrd=0.232 nrs=0.232 sa=0
 + sb=0 sd=0 mult=1
-XM2 net5 inp net6 net6 sky130_fd_pr__pfet_01v8_lvt L=0.5 W=1.25 nf=1 ad=0.3625 as=0.3625 pd=3.08 ps=3.08 nrd=0.232 nrs=0.232 sa=0
+XM2 net5 ua[0] net6 net6 sky130_fd_pr__pfet_01v8_lvt L=0.5 W=1.25 nf=1 ad=0.3625 as=0.3625 pd=3.08 ps=3.08 nrd=0.232 nrs=0.232 sa=0
 + sb=0 sd=0 mult=1
 XM9 net8 net8 net7 VGND sky130_fd_pr__nfet_01v8 L=2 W=0.65 nf=1 ad=0.1885 as=0.1885 pd=1.88 ps=1.88 nrd=0.446153846153846
 + nrs=0.446153846153846 sa=0 sb=0 sd=0 mult=1
@@ -34,14 +32,13 @@ XM10 net7 net7 VGND VGND sky130_fd_pr__nfet_01v8 L=2 W=0.65 nf=1 ad=0.1885 as=0.
 + nrs=0.446153846153846 sa=0 sb=0 sd=0 mult=1
 XMc net9 net8 net5 VGND sky130_fd_pr__nfet_01v8 L=2 W=0.65 nf=1 ad=0.1885 as=0.1885 pd=1.88 ps=1.88 nrd=0.446153846153846
 + nrs=0.446153846153846 sa=0 sb=0 sd=0 mult=2 m=2
-XC1 out net9 sky130_fd_pr__cap_mim_m3_1 W=10.5 L=10.5 MF=1
-XM5 out net5 VGND VGND sky130_fd_pr__nfet_01v8 L=2 W=0.65 nf=1 ad=0.1885 as=0.1885 pd=1.88 ps=1.88 nrd=0.446153846153846
+XC1 ua[1] net9 sky130_fd_pr__cap_mim_m3_1 W=10.5 L=10.5 MF=1
+XM5 ua[1] net5 VGND VGND sky130_fd_pr__nfet_01v8 L=2 W=0.65 nf=1 ad=0.1885 as=0.1885 pd=1.88 ps=1.88 nrd=0.446153846153846
 + nrs=0.446153846153846 sa=0 sb=0 sd=0 mult=30 m=30
 XM8 net8 vref VDPWR VDPWR sky130_fd_pr__pfet_01v8 L=1 W=5.3 nf=1 ad=1.537 as=1.537 pd=11.18 ps=11.18 nrd=0.0547169811320755
 + nrs=0.0547169811320755 sa=0 sb=0 sd=0 mult=1
-XM7 out vref VDPWR VDPWR sky130_fd_pr__pfet_01v8 L=1 W=5.3 nf=1 ad=1.537 as=1.537 pd=11.18 ps=11.18 nrd=0.0547169811320755
+XM7 ua[1] vref VDPWR VDPWR sky130_fd_pr__pfet_01v8 L=1 W=5.3 nf=1 ad=1.537 as=1.537 pd=11.18 ps=11.18 nrd=0.0547169811320755
 + nrs=0.0547169811320755 sa=0 sb=0 sd=0 mult=15 m=15
 XM6 net6 vref VDPWR VDPWR sky130_fd_pr__pfet_01v8 L=1 W=5.3 nf=1 ad=1.537 as=1.537 pd=11.18 ps=11.18 nrd=0.0547169811320755
 + nrs=0.0547169811320755 sa=0 sb=0 sd=0 mult=1
-**.ends
-.end
+.ends

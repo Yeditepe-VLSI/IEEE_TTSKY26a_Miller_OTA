@@ -1,0 +1,40 @@
+
+Magic 8.3 revision 606 - Compiled on Wed Feb 25 06:37:25 AM +03 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048576]
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "/home/tarator/Desktop/IEEE_TTSKY26a_Miller_OTA/test/drc/magic_sky130_drc.tcl" from command line.
+Magic SKY130 DRC
+Input    : /home/tarator/Desktop/IEEE_TTSKY26a_Miller_OTA/gds/tt_um_analog_ota_v3_IEEE.gds
+Top cell : tt_um_analog_ota_v3_IEEE
+Out dir  : /home/tarator/Desktop/IEEE_TTSKY26a_Miller_OTA/drc_reports
+DRC style is now "drc(full)"
+DRC style: drc(full)
+Reading GDS...
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 3.0
+Library name: tt_um_analog_ota_v3_IEEE
+Reading "tt_um_analog_ota_v3_IEEE".
+Forcing full hierarchical DRC recheck...
+Loading DRC CIF style.
+Total DRC errors found: 0
+Running optional extraction feedback check...
+Extracting tt_um_analog_ota_v3_IEEE into tt_um_analog_ota_v3_IEEE.ext:
+Magic DRC report written to: /home/tarator/Desktop/IEEE_TTSKY26a_Miller_OTA/drc_reports/tt_um_analog_ota_v3_IEEE.magic_drc.txt
+Magic feedback written to  : /home/tarator/Desktop/IEEE_TTSKY26a_Miller_OTA/drc_reports/tt_um_analog_ota_v3_IEEE.magic_feedback.tcl
+Magic DRC finished.
+Usage: quit [exit_status] [-noprompt]
+Using technology "sky130A", version 1.0.574-1-ga1e16e9

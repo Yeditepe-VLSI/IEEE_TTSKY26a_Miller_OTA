@@ -1,0 +1,24 @@
+
+Magic 8.3 revision 606 - Compiled on Wed Feb 25 06:37:25 AM +03 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Using technology "sky130A", version 1.0.574-1-ga1e16e9
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 3.0
+Library name: tt_um_analog_ota_v3_IEEE
+Reading "tt_um_analog_ota_v3_IEEE".
+Extracting tt_um_analog_ota_v3_IEEE into tt_um_analog_ota_v3_IEEE.ext:
+exttospice finished.

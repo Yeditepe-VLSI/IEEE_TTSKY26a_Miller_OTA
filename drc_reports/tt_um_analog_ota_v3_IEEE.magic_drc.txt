@@ -1,0 +1,9 @@
+Magic SKY130 DRC report
+=======================
+Input    : /home/tarator/Desktop/IEEE_TTSKY26a_Miller_OTA/gds/tt_um_analog_ota_v3_IEEE.gds
+Top cell : tt_um_analog_ota_v3_IEEE
+
+DRC total errors: 
+
+Detailed per-cell and listall reporting is skipped in batch mode
+to avoid Magic sessions hanging on some builds.
