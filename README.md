@@ -1,48 +1,101 @@
-![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg)
+<!---
 
-#  Sky130 Self-Biased Miller OTA Unity-Gain Buffer
+This file is used to generate your project datasheet. Please fill in the information below and delete any unused
+sections.
 
-- [Read the documentation for project](docs/info.md)
+You can also include images in this folder and reference them in the markdown. Each image must be less than
+512 kb in size, and the combined size of all images must be less than 1 MB.
+-->
+## How it Works
+This project features a **Unity-Gain Buffer** based on a **Two-Stage Miller OTA**, integrated with a **Beta-Multiplier Reference (BMR)** and a **Startup Circuit**, all implemented in the **Skywater 130nm (sky130)** PDK. Ultimately, this buffer serves as the foundational building block for a complete, continuous-time **Gm-C (Transconductor-Capacitor) Filter** system currently under development.
 
-## What is Tiny Tapeout?
+### 1. Unity-Gain Configuration & Core Performance
+At its core, the Two-Stage Miller OTA provides a high **open-loop gain of over 60 dB**. To create the buffer configuration, the inverting input is directly hardwired to the output ($V_{out}$) in a strict negative feedback loop. This transforms the internal differential amplifier into a **single-input, single-output** voltage follower.
+*   **Precision Tracking & Fast Slew:** The >60 dB open-loop gain minimizes the steady-state error, ensuring the closed-loop voltage gain is extremely close to unity ($A_v \approx 1$). Furthermore, the circuit achieves a strong simulated **Slew Rate of 18.65 V/µs** for rapid signal settling.
+*   **Load Drive Capability:** The transconductance ($g_m$) of the second stage and the compensation network are carefully sized to stably drive a **3 pF capacitive load** without degrading performance, maintaining a highly stable **Phase Margin of > 65°**.
 
-Tiny Tapeout is an educational project that aims to make it easier and cheaper than ever to get your digital designs manufactured on a real chip.
+### 2. Miller Compensation with Active Lead Resistor
+Driving a capacitive load in a unity-gain configuration is the most demanding condition for stability. To address this:
+*   **Lead Compensation:** A Miller compensation capacitor and a nulling resistor are placed between the differential input stage and the common-source gain stage. This breaks the unwanted high-frequency feedforward path, pushing the non-dominant pole to higher frequencies and neutralizing the Right-Half-Plane (RHP) zero.
+*   **Area Efficiency:** Instead of using a massive passive resistor, the lead resistance is implemented using an **active MOS transistor biased in the linear (triode) region**. This secures an adequate phase margin to prevent oscillation while drastically saving valuable silicon area on the TinyTapeout frame.
 
-To learn more and get started, visit https://tinytapeout.com.
+### 3. Self-Biasing & Future Gm-C Integration
+The circuit is entirely self-contained, operates without an external bias current source, and is highly power-efficient (consuming ~**162.7 µW** total):
+*   **Beta-Multiplier Reference (BMR):** Internally generates a stable reference current ($I_{ref}$), rendering the OTA's biasing largely independent of supply voltage ($V_{DD}$) variations.
+*   **Startup Circuit:** Guarantees that upon power-up, the BMR is forced out of its degenerate zero-current state and reliably reaches its target operating point immediately as the 1.8V power rail stabilizes.
+*   **Shared Biasing for Gm-C Filter:** As this project expands into a full Gm-C filter, a second OTA will be introduced. This upcoming OTA will share this exact same BMR network. This shared-bias strategy ensures matched $g_m$ behavior across the entire filter while keeping total power and layout footprint strictly minimized.
 
-## Analog projects
+The entire system is optimized for the TinyTapeout platform, focusing on robust analog performance and layout efficiency within the 1.8V domain.
 
-For specifications and instructions, see the [analog specs page](https://tinytapeout.com/specs/analog/).
 
----
+## How to test
 
-## Project Overview
+To rigorously verify the buffer's performance, stability, and self-biasing mechanics, follow these testing procedures:
 
-This project features a **Unity-Gain Buffer** based on a **Two-Stage Miller OTA**, integrated with a **Beta-Multiplier Reference (BMR)** and a **Startup Circuit**, all implemented in the **Skywater 130nm (sky130)** PDK. 
+*   **Load Setup:** Ensure a target **3 pF capacitive load** is connected to the output pin. 
+    *   *Important Note for Physical Testing:* Strictly account for the parasitic capacitance introduced by oscilloscope probes, breadboards, or PCB traces. Standard passive probes can easily introduce 10-15 pF of capacitance, which may alter the phase margin and cause unexpected ringing. Use low-capacitance probes or adjust external capacitors accordingly.
+*   **Pulse & Transient Test (Slewing & Settling):** 
+    *   Apply a square wave pulse signal at the single analog input pin, with voltage levels stepping between **0.5V and 1.0V**.
+    *   Run a **1 µs transient measurement** (or simulation) to observe the large-signal slewing and small-signal settling behavior. 
+    *   *Verification:* The output must accurately track the input. You should observe a fast response (correlating to the simulated **18.65 V/µs** slew rate). Crucially, the signal must settle without sustained ringing or oscillation. This confirms the stability of the lead-compensation network and the >65° phase margin under load.
+*   **DC Precision Tracking:** Slowly sweep the DC input voltage across the operating range. Verify that the output tracks the input with minimal steady-state error ($V_{out} \approx V_{in}$), which physically validates the high **> 60 dB open-loop gain** of the internal OTA.
+*   **Power-Up & Startup Test:** Ramp the $V_{DD}$ supply rail from **0V to 1.8V**. Monitor the circuit's response to confirm that the **Startup Circuit** successfully kicks the Beta-Multiplier Reference (BMR) out of its degenerate zero-current state and reliably establishes the nominal operating point.
 
-### Performance Metrics (Simulated)
-*   **Open-Loop Gain:** > 60 dB
-*   **Phase Margin:** > 65 degrees
-*   **Power Consumption:**
-*       P_DiffPair:[7.72 µW]
-*       P_BMR:[28 µW]
-*       P_SecondStage:[127 µW]
-*       P_Total:[162.72 µW]
-*   **Slew Rate:** [18.65 V/µs]
-*   **Target Load:** 3 pF
-## Specifications
 
-| Parameter          | Value             |
-|--------------------|-------------------|
-| Topology           | Miller OTA        |
-| External Network   | Unity-gain Buffer |
-| Input Resistance   | 25 KΩ             |
-| Output Capacitance | 3 pF              |
-| Input Range        | 0.4 V – 1 V       |
-| Output Range       | 0.4 V – 1 V       |
-| Settling Time      | 100 ns            |
-| Settling Error     | 0.03 %            |
+## External hardware
 
+Signal Generator / Oscillator: To provide the 0.4V - 1.0V pulse and AC input signals.
+
+DC Power Supply: Stable 1.8V source for the VDD rail.
+
+Oscilloscope: To simultaneously monitor the input and output waveforms, confirming tracking accuracy and settling time.
+
+Capacitor: A discrete 3 pF capacitor acting as the load.
+
+Multimeter: For observing DC bias levels and verifying total current consumption.
+=======
+<!---
+
+This file is used to generate your project datasheet. Please fill in the information below and delete any unused
+sections.
+
+You can also include images in this folder and reference them in the markdown. Each image must be less than
+512 kb in size, and the combined size of all images must be less than 1 MB.
+-->
+## How it Works
+This project features a **Unity-Gain Buffer** based on a **Two-Stage Miller OTA**, integrated with a **Beta-Multiplier Reference (BMR)** and a **Startup Circuit**, all implemented in the **Skywater 130nm (sky130)** PDK. Ultimately, this buffer serves as the foundational building block for a complete, continuous-time **Gm-C (Transconductor-Capacitor) Filter** system currently under development.
+
+### 1. Unity-Gain Configuration & Core Performance
+At its core, the Two-Stage Miller OTA provides a high **open-loop gain of over 60 dB**. To create the buffer configuration, the inverting input is directly hardwired to the output ($V_{out}$) in a strict negative feedback loop. This transforms the internal differential amplifier into a **single-input, single-output** voltage follower.
+*   **Precision Tracking & Fast Slew:** The >60 dB open-loop gain minimizes the steady-state error, ensuring the closed-loop voltage gain is extremely close to unity ($A_v \approx 1$). Furthermore, the circuit achieves a strong simulated **Slew Rate of 18.65 V/µs** for rapid signal settling.
+*   **Load Drive Capability:** The transconductance ($g_m$) of the second stage and the compensation network are carefully sized to stably drive a **3 pF capacitive load** without degrading performance, maintaining a highly stable **Phase Margin of > 65°**.
+
+### 2. Miller Compensation with Active Lead Resistor
+Driving a capacitive load in a unity-gain configuration is the most demanding condition for stability. To address this:
+*   **Lead Compensation:** A Miller compensation capacitor and a nulling resistor are placed between the differential input stage and the common-source gain stage. This breaks the unwanted high-frequency feedforward path, pushing the non-dominant pole to higher frequencies and neutralizing the Right-Half-Plane (RHP) zero.
+*   **Area Efficiency:** Instead of using a massive passive resistor, the lead resistance is implemented using an **active MOS transistor biased in the linear (triode) region**. This secures an adequate phase margin to prevent oscillation while drastically saving valuable silicon area on the TinyTapeout frame.
+
+### 3. Self-Biasing & Future Gm-C Integration
+The circuit is entirely self-contained, operates without an external bias current source, and is highly power-efficient (consuming ~**162.7 µW** total):
+*   **Beta-Multiplier Reference (BMR):** Internally generates a stable reference current ($I_{ref}$), rendering the OTA's biasing largely independent of supply voltage ($V_{DD}$) variations.
+*   **Startup Circuit:** Guarantees that upon power-up, the BMR is forced out of its degenerate zero-current state and reliably reaches its target operating point immediately as the 1.8V power rail stabilizes.
+*   **Shared Biasing for Gm-C Filter:** As this project expands into a full Gm-C filter, a second OTA will be introduced. This upcoming OTA will share this exact same BMR network. This shared-bias strategy ensures matched $g_m$ behavior across the entire filter while keeping total power and layout footprint strictly minimized.
+
+The entire system is optimized for the TinyTapeout platform, focusing on robust analog performance and layout efficiency within the 1.8V domain.
+
+
+## How to test
+
+To rigorously verify the buffer's performance, stability, and self-biasing mechanics, follow these testing procedures:
+
+*   **Load Setup:** Ensure a target **3 pF capacitive load** is connected to the output pin. 
+    *   *Important Note for Physical Testing:* Strictly account for the parasitic capacitance introduced by oscilloscope probes, breadboards, or PCB traces. Standard passive probes can easily introduce 10-15 pF of capacitance, which may alter the phase margin and cause unexpected ringing. Use low-capacitance probes or adjust external capacitors accordingly.
+*   **Pulse & Transient Test (Slewing & Settling):** 
+    *   Apply a square wave pulse signal at the single analog input pin, with voltage levels stepping between **0.5V and 1.0V**.
+    *   Run a **1 µs transient measurement** (or simulation) to observe the large-signal slewing and small-signal settling behavior. 
+    *   *Verification:* The output must accurately track the input. You should observe a fast response (correlating to the simulated **18.65 V/µs** slew rate). Crucially, the signal must settle without sustained ringing or oscillation. This confirms the stability of the lead-compensation network and the >65° phase margin under load.
+*   **DC Precision Tracking:** Slowly sweep the DC input voltage across the operating range. Verify that the output tracks the input with minimal steady-state error ($V_{out} \approx V_{in}$), which physically validates the high **> 60 dB open-loop gain** of the internal OTA.
+*   **Power-Up & Startup Test:** Ramp the $V_{DD}$ supply rail from **0V to 1.8V**. Monitor the circuit's response to confirm that the **Startup Circuit** successfully kicks the Beta-Multiplier Reference (BMR) out of its degenerate zero-current state and reliably establishes the nominal operating point.
 ## Simulation Results
 
 | Corner | Temp (°C) | Unity-Gain Frequency (Hz) | Phase Margin (°) |
@@ -57,94 +110,20 @@ This project features a **Unity-Gain Buffer** based on a **Two-Stage Miller OTA*
 | FF     | 25        | 9,714,410                 | 65.09            |
 | FF     | 125       | 6,840,200                 | 70.12            |
 
-### Pinout Configuration
-Please refer to the following analog pin assignments for testing:
-*   **Analog Input ($V_{in1}$):** `[ua[0]]`
-*   **Analog Output ($V_{out1}$):** `[ua[1]]`
-*   **Analog Input ($V_{in2}$):** `[ua[2]]`
-*   **Analog Output ($V_{out2}$):** `[ua[3]]`
----
-## How it works
-### 1. System Level: Gm-C Filter Architecture
-Ultimately, the circuits implemented in this document serve as the foundational building blocks for a complete, continuous-time **Gm-C (Transconductor-Capacitor) Filter**. 
+<img width="1033" height="785" alt="WhatsApp Image 2026-05-01 at 13 29 02" src="https://github.com/user-attachments/assets/4158c3df-f8c2-4728-938e-06dfe2089bbd" />
+<img width="1033" height="785" alt="WhatsApp Image 2026-05-01 at 13 29 03 (1)" src="https://github.com/user-attachments/assets/d32d3c77-3335-4ed7-b1bc-826a61a3a45b" />
+<img width="1600" height="602" alt="WhatsApp Image 2026-05-01 at 13 29 03" src="https://github.com/user-attachments/assets/f5289748-156f-4659-94cc-48f827e07038" />
 
-The Unity-Gain Miller OTA detailed below represents the first fully completed OTA block of this overarching system. A second OTA, which is required to finalize the filter topology, is currently in the active building stage. 
 
-A central design strategy of this project is **shared biasing**. Once the second OTA is integrated, it will be driven by the exact same **Beta-Multiplier Reference (BMR)** developed here. Sharing a single, autonomous biasing network across multiple OTAs ensures matched transconductance ($g_m$) behavior, guarantees consistent performance across the chip, and drastically minimizes both total power consumption and silicon footprint on the TinyTapeout frame.
-
-### 2. Unity-Gain Configuration & Core Performance
-At its core, the Two-Stage Miller OTA provides a  **open-loop gain of over 60 dB**. To create the buffer configuration, the inverting input is directly hardwired to the output ($V_{out}$) in a strict negative feedback loop. This transforms the internal differential amplifier into a **single-input, single-output** voltage follower, carefully optimized across multiple performance axes:
-
-*   **Precision Tracking:** The > 60 dB open-loop gain minimizes steady-state error, ensuring the closed-loop voltage gain is extremely close to unity ($A_v \approx 1$). The output accurately tracks the non-inverting input.
-*   **Transient & Slew Performance:** The circuit is designed for fast large-signal response, achieving a strong simulated **Slew Rate of 18.65 V/µs**. This ensures rapid and accurate settling during sharp input transitions or pulse signals.
-*   **Robust Load Drive & Stability:** The transconductance ($g_m$) of the second stage and the lead-compensation network are meticulously sized to stably drive a **3 pF capacitive load**. Under these load conditions, the buffer maintains a highly stable **Phase Margin of > 65 degrees**, completely preventing unwanted oscillations or ringing.
-*   **Strategic Power Distribution:** The total power consumption is tightly controlled at **162.72 µW**. To achieve the high slew rate and drive the capacitive load effectively, the majority of the power is strategically allocated to the second stage (**127 µW**), while the differential pair (**7.72 µW**) and BMR (**28 µW**) operate with strict power efficiency.
-
-### 3. Miller Compensation with Lead Resistor
-Driving a 3 pF capacitive load in a unity-gain configuration represents the absolute worst-case scenario for amplifier stability. To achieve robust stability, we rely on a **Miller compensation network**, specifically enhanced with a **lead compensation** technique:
-
-*   **Lead Compensation Strategy:** To neutralize this RHP zero while maintaining the crucial Miller pole-splitting effect, we added a "nulling resistor" in series with the Miller capacitor. This lead compensation breaks the high-frequency feedforward path. By carefully sizing this resistance, we force the RHP zero to infinity or move it into the Left-Half-Plane (LHP). This restores a healthy phase margin, ensuring the buffer remains completely stable without sustained ringing.
-*   **Active MOS Resistor for Area & PVT Robustness:** In integrated circuit layout, large passive resistors consume a massive amount of valuable silicon real estate. Given the strict area boundaries of a TinyTapeout tile, using a traditional passive resistor for lead compensation was highly inefficient. Instead, we implemented this series resistance using an **active MOS transistor biased deep in the linear (triode) region**. Beyond drastically reducing the layout footprint, this active approach provides a crucial advantage for **PVT (Process, Voltage, and Temperature)** stability. The resistance of a passive poly-resistor varies completely independently of the amplifier's transconductance ($g_m$). In contrast, an active MOS resistor naturally tracks the $g_m$ shifts of the second-stage transistors across different temperature and process corners. This correlated tracking ensures that the RHP zero cancellation remains perfectly tuned and the phase margin stays stable under all operating conditions.
-
-### 4.Beta-Multiplier Reference & Startup
-The system is designed to be completely self-sufficient. It operates entirely without the need for any external current sources or off-chip biasing networks:
-
-*   **Beta-Multiplier Reference (BMR):** The BMR functions as an autonomous, self-biasing current generator. It produces a highly stable internal reference current ($I_{ref}$), which ensures the OTA's transconductance ($g_m$) remains perfectly constant even in the presence of supply voltage ($V_{DD}$) fluctuations. Furthermore, this internal biasing architecture is highly efficient, operating with an ultra-low power consumption of approximately **28 µW**.
-*   **Startup Circuit:** Because self-biased networks like the BMR inherently have two stable operating states (the desired active state and a degenerate "zero-current" state), a startup circuit is strictly necessary. This mechanism guarantees that upon power-up, the circuit is immediately forced out of the zero-current state and reliably driven to its target  operating point as the 1.8V power rail stabilizes.
-
-The entire system is optimized for the **TinyTapeout** platform, focusing on stable analog performance and layout efficiency within the 1.8V domain.
-
-## How to test
-
-To verify the buffer's performance and stability:
-
-*   **Load Setup:** Ensure a **3 pF capacitive load** is connected to the output pin (accounting for any parasitic capacitance from probes or traces).
-*   **Pulse & Transient Test:** 
-    *   Apply a pulse signal at the inpu1 pin (`ua[0]`) with an amplitude ranging from **0.4V to 1.0V**.
-    *   Run a **1 µs transient test** to observe the slewing and settling behavior. 
-    *   Verify that the output accurately follows the input without sustained ringing, confirming the 60+ dB precision and the stability of the compensation network under load.
-*   **Power-Up Test:** Ramp the $V_{DD}$ from 0V to 1.8V to confirm the **Startup Circuit** successfully initializes the BMR.
-
-<img width="1033" height="785" alt="WhatsApp Image 2026-05-01 at 13 29 02" src="https://github.com/user-attachments/assets/e1d0e36f-7625-4d95-aae4-c8f795522d02" />
-<img width="1033" height="785" alt="WhatsApp Image 2026-05-01 at 13 29 03 (1)" src="https://github.com/user-attachments/assets/7fe7b2a9-32d3-41a3-b7db-87d4262ca146" />
-<img width="1600" height="602" alt="WhatsApp Image 2026-05-01 at 13 29 03" src="https://github.com/user-attachments/assets/7d052c14-b5b4-4f8f-8544-771aeb7f46b6" />
 
 ## External hardware
 
-To fully test this project on a physical bench, the following equipment is required:
+Signal Generator / Oscillator: To provide the 0.4V - 1.0V pulse and AC input signals.
 
-*   **Signal Generator / Oscillator:** To provide the 0.4V - 1.0V pulse and AC input signals.
-*   **DC Power Supply:** Stable 1.8V source for the VDD rail.
-*   **Oscilloscope:** To simultaneously monitor the input and output waveforms, confirming tracking accuracy and settling time.
-*   **Capacitor:** A discrete **3 pF capacitor** acting as the load.
-*   **Multimeter:** For observing DC bias levels and verifying total current consumption.
+DC Power Supply: Stable 1.8V source for the VDD rail.
 
----
+Oscilloscope: To simultaneously monitor the input and output waveforms, confirming tracking accuracy and settling time.
 
-## Enable GitHub actions to build the results page
-- [Enabling GitHub Pages](https://tinytapeout.com/faq/#my-github-action-is-failing-on-the-pages-part)
+Capacitor: A discrete 3 pF capacitor acting as the load.
 
-## Acknowledgments
-
-The architectural decisions, transistor sizing strategies, and overall design methodology for this Miller OTA were heavily guided by the principles outlined in **Analog Integrated Circuit Design by Simulation: Techniques, Tools, and Methods** by Prof. Uğur Çilingiroğlu. This book served as the foundational text for understanding the core mechanics of the circuit and is highly recommended to anyone diving into analog IC design.
-
-## Resources
-
-**Project References:**
-- [Analog Integrated Circuit Design by Simulation: Techniques, Tools, and Methods](https://www.mheducation.com/highered/mhp/product/analog-integrated-circuit-design-simulation-techniques-tools-methods?pd=search&viewOption=student) - Uğur Çilingiroğlu
-- [Design of Analog CMOS Integrated Circuits](https://www.mheducation.com/highered/product/design-analog-cmos-integrated-circuits-razavi/M9780072524932.html) - Behzad Razavi
-
-**Tiny Tapeout Resources:**
-- [FAQ](https://tinytapeout.com/faq/)
-- [Digital design lessons](https://tinytapeout.com/digital_design/)
-- [Learn how semiconductors work](https://tinytapeout.com/siliwiz/)
-- [Join the community](https://tinytapeout.com/discord)
-
-## What next?
-
-- [Submit your design to the next shuttle](https://app.tinytapeout.com/).
-- Share your project on your social network of choice:
-  - LinkedIn [#tinytapeout](https://www.linkedin.com/search/results/content/?keywords=%23tinytapeout) [@TinyTapeout](https://www.linkedin.com/company/100708654/)
-  - Mastodon [#tinytapeout](https://chaos.social/tags/tinytapeout) [@matthewvenn](https://chaos.social/@matthewvenn)
-  - X (formerly Twitter) [#tinytapeout](https://twitter.com/hashtag/tinytapeout) [@tinytapeout](https://twitter.com/tinytapeout)
-  - Bluesky [@tinytapeout.com](https://bsky.app/profile/tinytapeout.com)
+Multimeter: For observing DC bias levels and verifying total current consumption.
